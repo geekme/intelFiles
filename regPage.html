@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>INTEL - Illustration Screens</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id = "mainWrapper">
+    <div class = "header">
+        <div class = "headerCont">
+            <div class = "logo">
+                <a href="">
+                    <!--<img src="images/inDrive_Logo_03.png" alt=""/>-->
+                </a>
+            </div>
+            <div class = "title">
+                <span class="fontawesome-road"></span> inDrive
+            </div>
+
+            <div class = "backLink">
+                <a href="#">
+                    Back
+                </a>
+            </div>
+
+            <div class = "clear"></div>
+        </div>
+    </div>
+    <div class = "content">
+        <div class = "contentArea">
+            <div class = "form">
+                <div class = "container">
+                    <input type="text" placeholder="User Name" class = "name"/>
+                </div>
+                <div class = "container">
+                    <input type="password" placeholder="Password"/>
+                </div>
+                <div class = "container">
+                    <input type="text" placeholder="Phone Number"/>
+                </div>
+                <div class = "container">
+                    <input type="text" placeholder="Device ID"/>
+                </div>
+                <div class = "container">
+                    <input type="text" placeholder="First Name" class = "name"/>
+                </div>
+                <div class = "container">
+                    <input type="text" placeholder="Last Name"/>
+                </div>
+                <div class = "container">
+                    <p class = "list">
+                        User Role
+                    </p>
+                    <ul id="roles" class = "roles">
+                        <li value="">Driver</li>
+                        <li value="">Owner</li>
+                    </ul>
+                </div>
+                <div class = "container">
+                    <input type="text" placeholder="Email ID"/>
+                </div>
+                <div class = "container">
+                    <button>
+                        Continue
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Scripts-->
+<script type="text/javascript" src = "scripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+    $('.container button').click(function(){
+        window.location.href = "welcome.html"
+    });
+</script>
+<script type="text/javascript" src = "scripts/script.js"></script>
+</body>
+</html>

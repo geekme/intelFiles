@@ -1,0 +1,1184 @@
+/*
+    CSS for Intel Illustration pages
+    Author Munsif Mulla
+    Date : 21-10-2013
+*/
+@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|fontelico|maki|openwebicons|typicons);
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+/* fontelico */
+[class*="fontelico-"]:before {
+    font-family: 'fontelico', sans-serif;
+}
+
+/* maki */
+[class*="maki-"]:before {
+    font-family: 'maki', sans-serif;
+}
+
+/* openwebicons */
+[class*="openwebicons-"]:before {
+    font-family: 'OpenWeb Icons', sans-serif;
+}
+
+/* typicons */
+[class*="typicons-"]:before {
+    font-family: 'Typicons', sans-serif;
+}
+/*Generic CSS*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: open sans;
+}
+
+html{
+    padding: 0px;
+    margin:0px;
+    height: 100%;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background: #bdc3c7;
+    height: 100%;
+}
+body#index{
+    padding: 0px;
+    margin: 0px;
+    background: #2ecc71;
+}
+body#insurance{
+    padding: 0px;
+    margin: 0px;
+    background: #ededed;
+}
+
+.clear{
+    clear: both;
+}
+/*Main CSS*/
+#mainWrapper{
+    height: 100%;
+}
+
+#mainWrapper .header{
+    background: none repeat scroll 0 0 #3498DB;
+    border-bottom: 2px solid #FFFFFF;
+    border-top: 1px solid transparent;
+    position: relative;
+    z-index: 110;
+}
+#mainWrapper .headerCont{
+    width: 1080px;
+    margin:0 auto;
+    margin:0.3% auto;
+    position: relative;
+}
+#mainWrapper .headerCont .logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .headerCont .title{
+    display: inline-block;
+    vertical-align: middle;
+    color:#ffffff;
+    font-size: 24px;
+}
+#mainWrapper .headerCont .title span{
+    font-size: 30px;
+    color: #f5f040;
+    text-shadow: 0px 2px 2px rgba(0,0,0,.3);
+}
+#mainWrapper .headerCont .backLink {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 6px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+#mainWrapper .headerCont .backLink span {
+    background: none repeat scroll 0 0 #FF0000;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    text-align: left;
+    transition: all 0.5s ease 0s;
+    width: 56px;
+}
+#mainWrapper .headerCont .backLink div.userName {
+    background: url("../images/dropDown_03.png") no-repeat scroll 90% center rgba(0, 0, 0, 0);
+    display: inline-block;
+    padding: 5px 24px 5px 15px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .headerCont .backLink div.logout {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    height: 0px;
+    margin-bottom: 0;
+    margin-left: -40px;
+    margin-top: 25px;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    position: absolute;
+    width: 56px;
+    z-index: 100;
+    right: 0px;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+#mainWrapper .headerCont .backLink div.logout a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+#mainWrapper .headerCont .backLink div.userName:hover{
+    background:url('../images/dropDown_03.png') no-repeat 90% center #2980b9;
+}
+#mainWrapper .headerCont .backLink div.userName:hover div.logout{
+    padding:5px 15px;
+    height:23px;
+}
+#mainWrapper .headerCont .backLink a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#mainWrapper .content{
+    height: 100%;
+    position: relative;
+}
+#mainWrapper .content .contentArea{
+    height: 100%;
+    margin: 0 auto;
+    width: 1080px;
+}
+#mainWrapper .content .contentArea.insurance {
+     background: none repeat scroll 0 0 #FFFFFF;
+     height: 100%;
+     margin: 0 auto;
+     padding-top: 8px;
+     width: 1080px;
+ }
+#mainWrapper .content .contentArea .headerCont{
+    width: 1080px;
+    margin:0 auto;
+    margin:2% auto;
+}
+#mainWrapper .content .contentArea .headerCont .logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .content .contentArea .headerCont .title {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+    border-radius: 100% 100% 100% 100%;
+    color: #FFFFFF;
+    display: block;
+    font-size: 33px;
+    height: 138px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 13%;
+    text-shadow: 0px 1px 1px rgba(0,0,0,.3);
+}
+#mainWrapper .content .contentArea .headerCont .title span{
+    font-size: 45px;
+    color: #f5f040;
+    text-shadow: 0px 2px 2px rgba(0,0,0,.3);
+    display: block;
+}
+
+#mainWrapper .content .contentArea .form{
+    /*border: 1px solid;*/
+    width: 70%;
+    margin:3.5% auto 0;
+}
+#mainWrapper .content .contentArea .form .welComeTitle{
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+}
+#mainWrapper .content .contentArea .form .welComeTitle p{
+    font-size: 35px;
+    margin-top: -10px;
+}
+#mainWrapper .content .contentArea .form .imgWelcome {
+    margin: 0 auto;
+    width: 100px;
+    display: block;
+}
+#mainWrapper .content .contentArea .form .container{
+    width: 70%;
+    margin:2.5% auto;
+    /*display: none;*/
+}
+#mainWrapper .content .contentArea .form .container.extra{
+    width: 101.3%;
+}
+
+#mainWrapper .content .contentArea .form input[type="text"]{
+    width: 97%;
+    padding:2% 1.6%;
+    font-size: 20px;
+    border: none;
+    transition: all 0.5s;
+    outline: none;
+}
+#mainWrapper .content .contentArea .form .container .list {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: medium none;
+    color: #6F6F6F;
+    font-size: 20px;
+    margin-bottom: 2%;
+    outline: medium none;
+    padding: 2% 1.6%;
+    text-align: left;
+    transition: all 0.5s ease 0s;
+}
+#mainWrapper .content .contentArea .form .list .img{
+    width: 31%;
+    display: inline-block;
+}
+#mainWrapper .content .contentArea .form .list.center {
+    margin: 15px auto;
+    padding: 0px;
+    background: #ffffff;
+    color: #8c8c8c;
+    text-align: center;
+    font-size: 27px;
+}
+#mainWrapper .content .contentArea .form .list.center .text{
+    font-size: 20px;
+    color: #3498db;
+    padding: 10px 0px;
+}
+#mainWrapper .content .contentArea .form .list.center .header{
+    margin: 0px auto;
+    font-size: 15px;
+    padding: 5px 8px;
+    background: #a2cde0;
+    color:#ffffff;
+    text-align: left;
+}
+#mainWrapper .content .contentArea .form .list.center .header.gray{
+    background: #e5e5e5;
+    color:#929292;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats {
+    display: inline-block;
+    height: 160px;
+    vertical-align: bottom;
+    position: relative;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .dummyer{
+    width: 88px;
+    display: inline-block;
+    margin: 5px;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder {
+    position: absolute;
+    bottom: 0;
+    width: 88px;
+    padding-bottom: 10px;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .points{
+    font-size: 17px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.blue{
+    background: #259dc0;
+    height: 70px;
+    width: 100%;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.red{
+    background: #d83030;
+    height: 30px;
+    width: 100%;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.green{
+    background: #58bc40;
+    height: 80px;
+    width: 100%;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.orange{
+    background: #e08827;
+    height: 40px;
+    width: 100%;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .instance{
+    width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+#mainWrapper .content .contentArea .form .list.center .header .rightItem{
+    float: right;
+}
+#mainWrapper .content .contentArea .form .list.center .header .rightItem span{
+    border:none;
+    display: inline;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+#mainWrapper .content .contentArea .form .list.center .mapHolder{
+    height: 150px;
+}
+#mainWrapper .content .contentArea .form .list.center .distancePoints{
+    padding: 10px;
+    background: #f2f2f2;
+    color: #858585;
+    text-align: left;
+    font-size: 20px;
+}
+#mainWrapper .content .contentArea .form .list.center .distancePoints span{
+    float: right;
+    font-size: inherit;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+#mainWrapper .content .contentArea .form .list.center .mapHolder iframe{
+    width: 100%;
+    height: 150px;
+}
+#mainWrapper .content .contentArea .form .list.center .header .rightItem span:nth-of-type(1){
+    border:none;
+    display: inline;
+    font-size: 13px;
+    margin-right: 15px;
+    padding: 0;
+}
+#mainWrapper .content .contentArea .form .list span {
+    border-right: 1px solid #000000;
+    display: inline-block;
+    font-size: 52px;
+    margin-right: 2%;
+    padding: 15px 24px;
+}
+#mainWrapper .content .contentArea .form .list .divide {
+    background: #f2f2f2;
+    color: #606060;
+    text-align: left;
+    border-top: 1px solid #707070;
+    /*margin-top: 15px;*/
+}
+#mainWrapper .content .contentArea .form .list .divide .pts {
+    border: none;
+    display: inline-block;
+    font-size: 23px;
+    height: 100%;
+    margin-top: -23px;
+    padding: 30px 0;
+    vertical-align: middle;
+}
+#mainWrapper .content .contentArea .form .list.green {
+    background: none repeat scroll 0 0 #CCF2BF;
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+#mainWrapper .content .contentArea .form .list.lightOrange {
+    background: none repeat scroll 0 0 #f2dd76;
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+#mainWrapper .content .contentArea .form .list.lightOrange .exclam{
+    color:#fe0000;
+    font-size: 24px;
+    font-weight: bold;
+    margin:0;
+    padding: 0 3px;
+    border: none;
+}
+#mainWrapper .content .contentArea .form .list.center.img {
+    font-size: 25px;
+    margin: 15px auto;
+    padding: 0px 0px;
+    width: 101.3%;
+}
+#mainWrapper .content .contentArea .form .list.center img{
+    /*width: 100%;*/
+    margin:0 11%;
+}
+#mainWrapper .content .contentArea .form .roles {
+    /*border: 1px solid;*/
+    font-size: 20px;
+    list-style: none outside none;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    width: 530px;
+    /*height:95px;*/
+    height:0px;
+    overflow: hidden;
+    margin-top: -10px;
+}
+#mainWrapper .content .contentArea .form .roles li{
+    padding:2% 1.6%;
+    background: #ffffff;
+}
+#mainWrapper .content .contentArea .form .roles li:hover{
+    background: #ececec;
+    cursor: pointer;
+}
+#mainWrapper .content .contentArea .form input[type="password"]{
+    width: 97%;
+    padding:2% 1.6%;
+    font-size: 20px;
+    border: none;
+    transition: all 0.5s;
+    outline: none;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.5s 0.5s ease;
+    text-indent: -100%;
+    /*opacity:0;*/
+}[placeholder]::-webkit-input-placeholder {
+    transition: text-indent 0.5s ease;
+    /*text-indent: -100%;*/
+    opacity:1;
+}
+
+#mainWrapper .content .contentArea .form button{
+    width: 100%;
+    padding:1.8% 0;
+    font-size: 25px;
+    color:#ffffff;
+    border:none;
+    text-align: center;
+    background: #2980b9;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 0px 3px 0px #255f91;
+    outline: none;
+}
+
+#mainWrapper .content .contentArea .form button:hover{
+    background: #3498db;
+}
+#mainWrapper .content .contentArea .form button:active{
+    background: #3498db;
+    box-shadow:inset 0px 3px 0px #255f91;
+}
+
+/*Tabs*/
+#mainWrapper .content .contentArea .tabHolder {
+    background: none repeat scroll 0 0 #707070;
+    /*border-right: 5px solid #4F4F4F;*/
+    float: left;
+    height: 100%;
+    width: 27.5%;
+}
+#mainWrapper .content .contentArea .tabHolder .tab{
+    background: none repeat scroll 0 0 #707070;
+    border-bottom: 1px solid #4F4F4F;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 16px 0 16px 50px;
+    transition:0.5s all;
+    cursor: pointer;
+    display: block;
+}
+#mainWrapper .content .contentArea .tabHolder .tab a{
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+}
+#mainWrapper .content .contentArea .tabHolder .tab a.current{
+    color: #3498db;
+}
+#mainWrapper .content .contentArea .tabHolder .tab a:hover{
+    color: #3498db;
+}
+#mainWrapper .content .contentArea .tabHolder .tab:hover {
+    background: none repeat scroll 0 0 #1e1e1e;
+    color: #3498db;
+    border-bottom: 1px solid #bcbcbc;
+}
+#mainWrapper .content .contentArea .tabHolder .tab.current {
+    background: none repeat scroll 0 0 #1e1e1e;
+    color: #3498db;
+    border-bottom: 1px solid #bcbcbc;
+}
+#mainWrapper .content .contentArea .mainSlide {
+    /*position: relative;*/
+    height: 100%;
+}
+
+#mainWrapper .content .contentArea .slideHolderMain {
+    background: none repeat scroll 0 0 #D1D1D1;
+    /*border-top: 1px solid transparent;*/
+    float: left;
+    height: 99.9%;
+    position: relative;
+    width: 70.5%;
+    overflow: hidden;
+}
+#mainWrapper .content .contentArea .slideHolder {
+    /*position: absolute;*/
+    width: 100%;
+    height:100%;
+    /*bottom: 0px;*/
+}
+#mainWrapper .content .contentArea .slideHolder .slide {
+    /*position: absolute;*/
+    width: 100%;
+    display: none;
+}
+#mainWrapper .content .contentArea .slideHolder .slide.payer {
+    /*position: absolute;*/
+    width: 100%;
+    display: block;
+}
+#mainWrapper .content .contentArea .slideHolder .slide:nth-of-type(6){
+    /*display: block;*/
+}
+#mainWrapper .content .contentArea .slideHolder .slide .form{
+    margin-top: 0px;
+    width: 90%;
+}
+/*Drive Way CSS*/
+#mainWrapper .content .contentArea .driveWay{
+    background: url("../images/trackLine_03.png") repeat-y scroll center 0 #AAAAAA;
+    border-left: 5px solid #4F4F4F;
+    float: right;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 15.01%;
+    display: none;
+}
+#mainWrapper .content .contentArea .driveWay .car {
+    bottom: 2%;
+    display: block;
+    left: 50%;
+    margin-left: -18.3%;
+    position: absolute;
+    width: 36.5%;
+    cursor: move;
+}
+#mainWrapper .content .contentArea .driveWay .shade {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    height: 15%;
+    position: absolute;
+    width: 100%;
+}
+
+/*Insurance Tabs*/
+
+#mainWrapper .content .contentArea .insuranceTabs {
+    background: none repeat scroll 0 0 #FFFFFF;
+    /*border-right: 1px solid #3498DB;*/
+    float: left;
+    height: 100%;
+    width: 21%;
+}
+#mainWrapper .content .contentArea .insuranceTabs .tab {
+    background: none repeat scroll 0 0 #707070;
+    border-bottom: 1px solid #4F4F4F;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 30px;
+    transition: all 0.5s ease 0s;
+}
+#mainWrapper .content .contentArea .insuranceTabs .tab a{
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+}
+#mainWrapper .content .contentArea .insuranceTabs .tab a.current{
+    color: #3498db;
+}
+#mainWrapper .content .contentArea .insuranceTabs .tab a:hover{
+    color: #3498db;
+}
+#mainWrapper .content .contentArea .insuranceTabs .tab:hover {
+    background: none repeat scroll 0 0 #1e1e1e;
+    color: #3498db;
+    border-bottom: 1px solid #bcbcbc;
+}
+#mainWrapper .content .contentArea .insuranceTabs .tab.current {
+    background: url('../images/Tab_indicator.png') no-repeat scroll 100% center #3498DB;
+    border-bottom: 1px solid #BCBCBC;
+    color: #FFFFFF;
+}
+#mainWrapper .content .contentArea .insuranceMainTabs {
+    /*position: relative;*/
+    height: 100%;
+    width: 52%;
+    float: left;
+    border-left: 1px solid #d8d8d8;
+}
+
+#mainWrapper .content .contentArea .slideHolderMain {
+    background: none repeat scroll 0 0 #D1D1D1;
+    /*border-top: 1px solid transparent;*/
+    float: left;
+    height: 99.9%;
+    position: relative;
+    width: 70.5%;
+    overflow: hidden;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder {
+    /*position: absolute;*/
+    width: 100%;
+    height:100%;
+    /*bottom: 0px;*/
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide {
+    /*position: absolute;*/
+    width: 100%;
+    /*display: none;*/
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide:nth-of-type(6){
+    display: block;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide .form{
+    margin-top: 0px;
+    width: 90%;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide .boxContainer{
+    margin: 10px 20px;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide .boxContainer .boxHeader{
+    padding: 4px 10px;
+    background: #3498DB;
+    color: #ffffff;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide .boxContainer.red .boxHeader{
+    padding: 4px 10px;
+    background: #e42352;
+    color: #ffffff;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide .boxContainer.orange .boxHeader{
+    padding: 4px 10px;
+    background: #edb32e;
+    color: #ffffff;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide .boxContainer .boxCont{
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 30px;
+    color: #3498DB;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide .boxContainer.red .boxCont{
+    background: #efc5c6;
+    text-align: center;
+    padding: 10px 15px;
+    color: #e42352;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .slide .boxContainer.orange .boxCont{
+    background: #efc97e;
+    text-align: center;
+    padding: 10px 15px;
+    color: #a26314;
+}
+
+/*Drop Downs*/
+#mainWrapper .content .contentArea .insuranceTabHolder .mainDropDownHolder{
+    /*border: 1px solid;*/
+    position: relative;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .mainDropDownHolder .ddOne{
+    display: inline-block;
+    margin:5px 20px;
+}
+#mainWrapper .content .contentArea .insuranceTabHolder .mainDropDownHolder .ddTwo{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin:5px 20px;
+}
+#mainWrapper .content .contentArea .grayDD{
+    width: 175px;
+    font-size: 14px;
+    background: #e8e8e8;
+    position: relative;
+}
+#mainWrapper .content .contentArea .grayDD.bigDD{
+    width: auto;
+    font-size: 19px;
+    background: #e8e8e8;
+    position: relative;
+}
+#mainWrapper .content .contentArea .grayDD.smallDD{
+    width: 70px;
+    font-size: 19px;
+    background: #e8e8e8;
+    position: relative;
+}
+#mainWrapper .content .contentArea .grayDD .selected{
+    padding: 10px 12px;
+    color:#8c8c8c;
+    background: url('../images/grey_dropdown.png') no-repeat 90% center;
+}
+#mainWrapper .content .contentArea .grayDD ul{
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+    background: #e8e8e8;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .content .contentArea .grayDD ul li{
+    padding: 10px 12px;
+    color:#8c8c8c;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+#mainWrapper .content .contentArea .grayDD ul li:hover{
+    padding: 10px 12px;
+    background: #d2d2d2;
+    color:#8c8c8c;
+}
+
+/*Insurance Settings*/
+#mainWrapper .content .contentArea .insuranceSettings{
+    width: 26.5%;
+    float: left;
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel{
+
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .settingHeader{
+    font-size: 25px;
+    padding: 10px 12px;
+    position: relative;
+    color: #a7a7a7;
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .settingHeader span{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: url('../images/settings.png') no-repeat center;
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .container{
+    padding: 10px;
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .container.tip{
+    padding-top: 0px;
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .container .img {
+    display: inline-block;
+    margin: 4%;
+    text-align: center;
+    width: 23%;
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .container .pointsCounter {
+    padding: 10px 10px;
+    font-size: 30px;
+    color:#7c7c7c;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .container .tips{
+    padding: 10px;
+    color:#7c7c7c;
+    border-bottom: 1px solid #707070;
+    position: relative;
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .container .tips div{
+    width: 80%;
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .container .tips span{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    /*margin-top: -15px;*/
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: url('../images/checkmark.png') no-repeat center;
+}
+#mainWrapper .content .contentArea .insuranceSettings .settingPannel .container .tips:nth-of-type(2){
+    padding: 10px;
+    color:#7c7c7c;
+    border-bottom: 0px solid #707070;
+}
+
+/*Tuning Pop*/
+#mainWrapper .content .contentArea .tuningPop{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 810px;
+    margin-left: -405px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    padding-bottom: 10px;
+    min-height: 400px;
+    display: none;
+    z-index: 10001;
+}
+#mainWrapper .content .contentArea .tuningPop .header{
+    background: #3498db;
+    color: #ffffff;
+    padding: 15px 12px;
+    font-size: 22px;
+    position: relative;
+}
+#mainWrapper .content .contentArea .tuningPop .header span{
+    float: right;
+    cursor: pointer;
+}
+#mainWrapper .content .contentArea .tuningPop .header span.createNewPop{
+    display: inline-block;
+    padding: 1px 10px;
+    background: #cee4f2;
+    margin-right: 20px;
+    vertical-align: middle;
+    color: #3498db;
+    cursor: pointer;
+}
+#mainWrapper .content .contentArea .tuningPop .container{
+    width: 80%;
+    margin: 10px auto;
+    border-bottom: 1px solid #d5d5d5;;
+}
+#mainWrapper .content .contentArea .tuningPop .container .drops .monthDD{
+    width: 185px;
+    display: inline-block;
+}
+#mainWrapper .content .contentArea .tuningPop .container .drops .monthDD .grayDD{
+    z-index: 101;
+}
+#mainWrapper .content .contentArea .tuningPop .container .drops .pointsDD{
+    width: 185px;
+    display: inline-block;
+}
+#mainWrapper .content .contentArea .tuningPop .container .drops .pointsDD .grayDD{
+    z-index: 101;
+}
+#mainWrapper .content .contentArea .tuningPop .container .drops .resultDD{
+    width: 185px;
+    display: inline-block;
+}
+#mainWrapper .content .contentArea .tuningPop .container .drops .resultDD .grayDD{
+    z-index: 101;
+}
+#mainWrapper .content .contentArea .tuningPop .container .sep{
+    width: 20px;
+    margin:0 5px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .content .contentArea .tuningPop .container .iffer{
+    width: 93%;
+    margin:2% auto;
+    padding-bottom: 10px;
+}
+#mainWrapper .content .contentArea .tuningPop .container .condition{
+    width: 198px;
+    margin-top: 17px;
+    display: inline-block;
+}
+#mainWrapper .content .contentArea .tuningPop .container .condition img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 3%;
+}
+#mainWrapper .content .contentArea .tuningPop .container .condition .grayDD {
+    z-index: 100;
+}
+#mainWrapper .content .contentArea .tuningPop .container .condDD{
+    width: 70px;
+    display: inline-block;
+}
+#mainWrapper .content .contentArea .tuningPop .container .condDD2{
+    width: 70px;
+    display: inline-block;
+}
+#mainWrapper .content .contentArea .tuningPop .container .condDD3{
+    width: 70px;
+    display: inline-block;
+}
+
+#mainWrapper .content .contentArea .tuningPop .buttons{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+#mainWrapper .content .contentArea .tuningPop .buttons button{
+    padding: 10px 18px;
+    border: none;
+    background: #d3d3d3;
+    color: #686868;
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    /*-webkit-transition: 0.5s all;*/
+    /*-moz-transition: 0.5s all;*/
+    /*-ms-transition: 0.5s all;*/
+    /*-o-transition: 0.5s all;*/
+    /*transition: 0.5s all;*/
+}
+#mainWrapper .content .contentArea .tuningPop .buttons button:hover{
+    background: #c1dbf2;
+    color: #5898e2;
+}
+#mainWrapper .content .contentArea .tuningPop .buttons button:active{
+    background: #3498db;
+    color: #ffffff;
+}
+/*Customer DD*/
+#mainWrapper .content .contentArea .insuranceTabs .customerMain{
+}
+#mainWrapper .content .contentArea .insuranceTabs .customerMain .custTitle{
+    padding: 20px 30px;
+    background: url('../images/grey_dropdown.png') no-repeat 90% center;
+    color: #2980b9;
+    border-bottom: 1px solid #cecece;
+    cursor: pointer;
+}
+#mainWrapper .content .contentArea .insuranceTabs .customerMain ul{
+    list-style-type: square;
+    margin-left: 30px;
+    list-style-position: inside;
+    height: 0px;
+    overflow: hidden;
+}
+#mainWrapper .content .contentArea .insuranceTabs .customerMain ul li{
+    padding: 20px 0px;
+    color: #2980b9;
+    border-bottom: 1px solid #cecece;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+}
+#mainWrapper .content .contentArea .insuranceTabs .customerMain ul li:hover{
+    background: #3498db;
+    color: #ffffff;
+}
+
+.screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(255,255,255,0.6);
+    display: none;
+}
+/*..................................................*/
+
+#mainWrapper .carDiscMain{
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    color: #6F6F6F;
+}
+#mainWrapper .carDiscMain .mainScoreHolder{
+    width: 1080px;
+    margin: 10px auto;
+    text-align: center;
+}
+#mainWrapper .carDiscMain .scroreHolder{
+    display: inline-block;
+    /*width: 24.4%;*/
+    margin: 0px 4%;
+}
+#mainWrapper .carDiscMain .scroreHolder span:nth-of-type(1){
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 40px;
+}
+#mainWrapper .carDiscMain .scroreHolder span.today{
+    color:#44b91a;
+}
+#mainWrapper .carDiscMain .scroreHolder span:nth-of-type(2){
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#mainWrapper .content .contentArea .appSetting {
+    background: none repeat scroll 0 0 #ffffff;
+    float: left;
+    /*height: 99.9%;*/
+    /*position: relative;*/
+    width: 56.5%;
+    /*overflow: hidden;*/
+    color: #6F6F6F;
+    margin:2%
+}
+#mainWrapper .content .contentArea .mainHeading{
+    font-size: 20px;
+    padding: 10px 15px 10px 6%;
+    background: #6f6f6f;
+    color: #ffffff;
+}
+#mainWrapper .content .contentArea .appSetting .heading{
+    font-size: 20px;
+    padding: 10px 15px;
+    background: #3498db;
+    color: #ffffff;
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain{
+    padding: 0px;
+    /*margin: 0px 0px 30px 2%;*/
+    list-style: none;
+    font-size: 22px;
+    /*min-height: 450px;*/
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li{
+    border-bottom: 1px solid #808080;
+    cursor: pointer;
+    padding: 4% 6%;
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li span{
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngName{
+    width: 84%;
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain{
+    /*border: 1px solid blue;*/
+    width: 78px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl{
+    /*border: 1px solid red;*/
+    font-size: 18px;
+    width: 159px;
+    position: relative;
+    border-radius: 15px;
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .on{
+    background: #348cd0;
+    padding: 3px 9px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .off{
+    background: #707070;
+    padding: 3px 9px;
+    border-radius: 15px;
+    color: #c5c5c5;
+    margin-left: 7px;
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .round{
+    height: 17px;
+    width: 17px;
+    border-radius: 100%;
+    /*background: #ffffff;*/
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .on .round{
+    background: #ffffff;
+}
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .off .round{
+    background: #c5c5c5;
+}
+
+/*#scrollbar1 { width: 520px; clear: both; margin: 20px 0 10px; }*/
+.slideHolderMain .viewport {
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: 77%;
+}
+
+.slideHolderMain .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+/*.slideHolderMain .thumb .end,*/
+/*.slideHolderMain .thumb { background-color: #003D5D; }*/
+.slideHolderMain .scrollbar {
+    float: right;
+    position: relative;
+    width: 22%;
+}
+.slideHolderMain .track {
+    background: url("../images/trackLine_03.png") repeat-y scroll center 0 #AAAAAA;
+    border-left: 5px solid #4F4F4F;
+    height: 100%;
+    padding: 0 1px;
+    position: relative;
+    width: 100%;
+}
+.slideHolderMain .thumb {
+    background: url('../images/car.png') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    height: 20px;
+    margin-left: 30%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 40%;
+}
+.slideHolderMain .thumb .end { overflow: hidden; height: 5px; width: 13px; }
+.slideHolderMain .disable{ display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }

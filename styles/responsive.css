@@ -1,0 +1,114 @@
+/*
+    CSS for Intel Illustration pages
+    Author Munsif Mulla
+    Date : 21-10-2013
+*/
+
+/*1080 - 1000*/
+@media all and (min-width: 1000px) and (max-width: 1080px){
+    body{
+        background: green;
+    }
+    #mainWrapper .headerCont {
+        width: 100%;
+    }
+    #mainWrapper .headerCont .backLink {
+        width: 87.1%;
+    }
+    #mainWrapper .content .contentArea {
+        width: 100%;
+    }
+    #mainWrapper .content .contentArea .form .list.center {
+        width: 113%;
+    }
+}
+/*999 - 950*/
+@media all and (min-width: 950px) and (max-width: 999px){
+    body{
+        background: blueviolet;
+    }
+    #mainWrapper .headerCont {
+        width: 100%;
+    }
+    #mainWrapper .headerCont .backLink {
+        width: 86.4%;
+    }
+    #mainWrapper .content .contentArea {
+        width: 100%;
+    }
+    #mainWrapper .content .contentArea .form .list.center {
+        width: 113%;
+    }
+}
+/*949 - 900*/
+@media all and (min-width: 900px) and (max-width: 949px){
+    body{
+        background: greenyellow;
+    }
+    #mainWrapper .headerCont {
+        width: 100%;
+    }
+    #mainWrapper .headerCont .backLink {
+        width: 85.7%;
+    }
+    #mainWrapper .content .contentArea {
+        width: 100%;
+    }
+    #mainWrapper .content .contentArea .form .list.center {
+        width: 110%;
+    }
+}
+/*899 - 850*/
+@media all and (min-width: 850px) and (max-width: 899px){
+    body{
+        background: gold;
+    }
+    #mainWrapper .headerCont {
+        width: 100%;
+    }
+    #mainWrapper .headerCont .backLink {
+        width: 84.7%;
+    }
+    #mainWrapper .content .contentArea {
+        width: 100%;
+    }
+    #mainWrapper .content .contentArea .form .list.center {
+        width: 109%;
+    }
+}
+/*849 - 800*/
+@media all and (min-width: 800px) and (max-width: 849px){
+    body{
+        background: goldenrod;
+    }
+    #mainWrapper .headerCont {
+        width: 100%;
+    }
+    #mainWrapper .headerCont .backLink {
+        width: 83.7%;
+    }
+    #mainWrapper .content .contentArea {
+        width: 100%;
+    }
+    #mainWrapper .content .contentArea .form .list.center {
+        width: 107%;
+    }
+}
+/*750 - 799*/
+@media all and (min-width: 750px) and (max-width: 799px){
+    body{
+        background: darkmagenta;
+    }
+    #mainWrapper .headerCont {
+        width: 100%;
+    }
+    #mainWrapper .headerCont .backLink {
+        width: 83.7%;
+    }
+    #mainWrapper .content .contentArea {
+        width: 100%;
+    }
+    #mainWrapper .content .contentArea .form .list.center {
+        width: 107%;
+    }
+}
