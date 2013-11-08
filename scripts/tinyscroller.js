@@ -56,7 +56,7 @@
             }
             if (g.scroll && window.addEventListener) {
                 t[0].addEventListener("DOMMouseScroll", x, false);
-                t[0].addEventListener("mousewheel", x, false)
+                t[0].addEventListener("mousewheel", x, false);
             } else {
                 if (g.scroll) {
                     t[0].onmousewheel = x

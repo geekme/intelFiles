@@ -67,6 +67,13 @@ var fn = {
             $(this).addClass('current');
             $('.slideHolder').find('.slide').hide();
             $('.slideHolder').find('[data-slide_id="'+getDataType+'"]').fadeIn();
+            $('.slideHolder').tinyscrollbar({ sizethumb: 100,invertscroll:false });
+            if(getDataType == "ecoDrive"){
+                $('.ecoSettings').show();
+            }
+            else{
+                $('.ecoSettings').hide();
+            }
         });
     },
     showTabHolder:function(){
@@ -114,6 +121,42 @@ var fn = {
             $('.tuningPop').fadeOut();
         });
     },
+
+    switch:function(){
+        $('.switch').click(function(){
+            var getSwitch = $(this).data("switch");
+            if(getSwitch == "ON"){
+                $(this).animate({
+                    marginLeft: "-80px"
+                });
+                $(this).data("switch","OFF")
+            }
+            else{
+                $(this).animate({
+                    marginLeft: "0px"
+                });
+                $(this).data("switch","ON")
+            }
+        });
+
+        //Another Switch
+        $('.sttngCntrl').click(function(){
+            var getSwitch = $(this).data("switch");
+            if(getSwitch == "ON"){
+                $(this).animate({
+                    marginLeft: "-80px"
+                });
+                $(this).data("switch","OFF")
+            }
+            else{
+                $(this).animate({
+                    marginLeft: "0px"
+                });
+                $(this).data("switch","ON")
+            }
+        });
+    },
+
     status: "on",
     settingsButton:function(){
         $("#mainWrapper .settingsMain li").click(function(){
@@ -154,7 +197,9 @@ var fn = {
         fn.showPop();
         fn.closePop();
 
-        fn.settingsButton();
+//        fn.settingsButton();
+
+        fn.switch();
     }
 }
 

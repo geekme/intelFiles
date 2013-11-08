@@ -277,6 +277,10 @@ body#insurance{
     text-align: center;
     font-size: 27px;
 }
+#mainWrapper .content .contentArea .form .list.dummyGap {
+    height:40px;
+    border:1px solid;
+}
 #mainWrapper .content .contentArea .form .list.center .text{
     font-size: 20px;
     color: #3498db;
@@ -333,6 +337,75 @@ body#insurance{
     height: 80px;
     width: 100%;
 }
+#mainWrapper .content .contentArea .ecoSettings {
+    background: none repeat scroll 0 0 #ffffff;
+    margin-left: 29px;
+    padding: 20px 15px;
+    position: absolute;
+    width: 497px;
+    z-index: 100001;
+    top: 0px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    display: none;
+}
+#mainWrapper .content .contentArea .ecoSettings .switchHolder {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    width: 80px;
+    border-radius: 20px;
+    overflow:hidden;
+    background: #ffffff;
+    /*border:1px solid;*/box-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+}
+#mainWrapper .content .contentArea .ecoSettings .switchHolder .switch {
+    display: inline-block;
+    position: relative;
+    width: 170px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#mainWrapper .content .contentArea .ecoSettings .switchHolder .switch .switchON,
+#mainWrapper .content .contentArea .ecoSettings .switchHolder .switch .switchOFF{
+    display: inline-block;
+    width: 70px;
+    border-radius: 20px;
+    /*border:1px solid red;*/
+    position: relative;
+    font-weight: bold;
+}
+#mainWrapper .content .contentArea .ecoSettings .switchHolder .switch .switchON{
+    background: #3498db;
+    color: #ffffff;
+    padding: 5px 10px 5px 0;
+    text-align: right;
+}
+#mainWrapper .content .contentArea .ecoSettings .switchHolder .switch .switchON span{
+    display: inline-block;
+    position: absolute;left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+}
+#mainWrapper .content .contentArea .ecoSettings .switchHolder .switch .switchOFF{
+    background: #8c8c8c;
+    color: #ffffff;
+    padding: 5px 10px 5px 0;
+    text-align: right;
+    margin-left: -4px;
+}
+#mainWrapper .content .contentArea .ecoSettings .switchHolder .switch .switchOFF span{
+    display: inline-block;
+    position: absolute;left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+}
+
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.orange{
     background: #e08827;
     height: 40px;
@@ -1063,7 +1136,7 @@ body#insurance{
     float: left;
     /*height: 99.9%;*/
     /*position: relative;*/
-    width: 56.5%;
+    width: 100%;
     /*overflow: hidden;*/
     color: #6F6F6F;
     margin:2%
@@ -1097,7 +1170,7 @@ body#insurance{
     vertical-align: middle;
 }
 #mainWrapper .content .contentArea .appSetting .settingsMain li .sttngName{
-    width: 84%;
+    width: 80%;
 }
 #mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain{
     /*border: 1px solid blue;*/
