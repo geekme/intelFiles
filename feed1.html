@@ -7,6 +7,7 @@
     <!--<link rel="stylesheet" href="styles/responsive.css" media = "screen"/>-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='styles/jquery-ui-1.10.3.custom.css' rel='stylesheet' type='text/css'>
+    <link href='styles/animate.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div id="mainWrapper">
@@ -76,6 +77,9 @@
     </div>
     <div class="tab" data-tab_id="geoFence">
         Geo Fencing
+    </div>
+    <div class="tab" data-tab_id="profile">
+        Profile
     </div>
     <div class="tab" data-tab_id="setting">
         Settings
@@ -259,7 +263,7 @@
         </div>
         <div class="driveStats">
             <div class="dummyer">
-                <div class="statHolder">
+                <div class="statHolder" data-newvalue = "8" >
                     <div class="points">8/10</div>
                     <div class="statGraph blue"></div>
                     <div class="instance">Breaking</div>
@@ -687,16 +691,337 @@
     </div>
 </div>
 <div class="slide" data-slide_id="feed">
-    <div class="form">
-        <div class="list center">
-            Your car has started sharing your driving data with the insurance
-            company
+<div class="form">
+    <div class="list center">
+        <div class="header">
+            Trip to madurai
+            <div class="rightItem">
+                                                    <span>
+                                                        12.11.2013
+                                                    </span>
+                                                    <span>
+                                                        16:40 - 23:12
+                                                    </span>
+            </div>
+
+            <div class="clear"></div>
         </div>
-        <div class="list center">
-            <b>Happy Motoring</b>
+        <div class="mapHolder">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=FU_uxQAdw_-fBCltTrTJcBauOzHgT35R6MPf-A%3BFVFylwAdXwOoBCkzlhixgsUAOzEzOfZkcluV3A&amp;q=Bangalore,+Karnataka,+India+to+Madurai,+Tamil+Nadu,+India&amp;aq=0&amp;oq=bangalore+to+madur&amp;ie=UTF8&amp;t=m&amp;saddr=Bangalore,+Karnataka,+India&amp;daddr=Madurai,+Tamil+Nadu,+India&amp;ll=10.65521,78.019409&amp;spn=0.809761,2.334595&amp;z=8&amp;output=embed"></iframe>
         </div>
-        <div class="list center img">
-            <img src="images/someImg_07.png" alt=""/>
+        <div class="distancePoints">
+            300Kms <span>25 Points</span>
+
+            <div class="clear"></div>
+        </div>
+        <div class="header gray">
+            Performance
+        </div>
+        <div class="driveStats">
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">8/10</div>
+                    <div class="statGraph blue"></div>
+                    <div class="instance">Breaking</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">5/10</div>
+                    <div class="statGraph orange"></div>
+                    <div class="instance">Acceleration</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">9/10</div>
+                    <div class="statGraph green"></div>
+                    <div class="instance">Fuel Efficiency</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">4/10</div>
+                    <div class="statGraph orange"></div>
+                    <div class="instance">Day Driving</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">2/10</div>
+                    <div class="statGraph red"></div>
+                    <div class="instance">Night Driving</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="list pay center">
+        <div class="text">
+            You have been driving well since last few trips
+        </div>
+        <div class="divide">
+            <span>12</span>
+            <span class="pts">Points added to your insurance</span>
+        </div>
+    </div>
+
+    <!--<div class="container extra">-->
+    <!--<button>-->
+    <!--Ok Got it!-->
+    <!--</button>-->
+    <!--</div>-->
+</div>
+<div class="form">
+    <div class="list center">
+        <div class="header">
+            Trip to madurai
+            <div class="rightItem">
+                                                    <span>
+                                                        12.11.2013
+                                                    </span>
+                                                    <span>
+                                                        16:40 - 23:12
+                                                    </span>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="mapHolder">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=FU_uxQAdw_-fBCltTrTJcBauOzHgT35R6MPf-A%3BFVFylwAdXwOoBCkzlhixgsUAOzEzOfZkcluV3A&amp;q=Bangalore,+Karnataka,+India+to+Madurai,+Tamil+Nadu,+India&amp;aq=0&amp;oq=bangalore+to+madur&amp;ie=UTF8&amp;t=m&amp;saddr=Bangalore,+Karnataka,+India&amp;daddr=Madurai,+Tamil+Nadu,+India&amp;ll=10.65521,78.019409&amp;spn=0.809761,2.334595&amp;z=8&amp;output=embed"></iframe>
+        </div>
+        <div class="distancePoints">
+            300Kms <span>25 Points</span>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="list pay center">
+        <div class="text">
+            You have been driving well since last few trips
+        </div>
+        <div class="divide">
+            <span>12</span>
+            <span class="pts">Points added to your insurance</span>
+        </div>
+    </div>
+</div>
+<div class="form">
+    <div class="list green center">
+        You are eligible for a free service if you achieve 120 insurance points
+    </div>
+    <div class="list center">
+        <div class="header">
+            Trip to madurai
+            <div class="rightItem">
+                                                    <span>
+                                                        12.11.2013
+                                                    </span>
+                                                    <span>
+                                                        16:40 - 23:12
+                                                    </span>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="mapHolder">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=FU_uxQAdw_-fBCltTrTJcBauOzHgT35R6MPf-A%3BFVFylwAdXwOoBCkzlhixgsUAOzEzOfZkcluV3A&amp;q=Bangalore,+Karnataka,+India+to+Madurai,+Tamil+Nadu,+India&amp;aq=0&amp;oq=bangalore+to+madur&amp;ie=UTF8&amp;t=m&amp;saddr=Bangalore,+Karnataka,+India&amp;daddr=Madurai,+Tamil+Nadu,+India&amp;ll=10.65521,78.019409&amp;spn=0.809761,2.334595&amp;z=8&amp;output=embed"></iframe>
+        </div>
+        <div class="distancePoints">
+            300Kms <span>25 Points</span>
+
+            <div class="clear"></div>
+        </div>
+        <div class="header gray">
+            Performance
+        </div>
+        <div class="driveStats">
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">8/10</div>
+                    <div class="statGraph blue"></div>
+                    <div class="instance">Breaking</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">5/10</div>
+                    <div class="statGraph orange"></div>
+                    <div class="instance">Acceleration</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">9/10</div>
+                    <div class="statGraph green"></div>
+                    <div class="instance">Fuel Efficiency</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">4/10</div>
+                    <div class="statGraph orange"></div>
+                    <div class="instance">Day Driving</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">2/10</div>
+                    <div class="statGraph red"></div>
+                    <div class="instance">Night Driving</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="list pay center">
+        <div class="text">
+            You have been driving well since last few trips
+        </div>
+        <div class="divide">
+            <span>12</span>
+            <span class="pts">Points added to your insurance</span>
+        </div>
+    </div>
+
+    <!--<div class="container extra">-->
+    <!--<button>-->
+    <!--Ok Got it!-->
+    <!--</button>-->
+    <!--</div>-->
+</div>
+
+<div class="form">
+    <div class="list lightOrange center">
+        !Braking more efficiently can fetch you some more Points.
+    </div>
+    <div class="list center">
+        <div class="header">
+            Trip to madurai
+            <div class="rightItem">
+                                                    <span>
+                                                        12.11.2013
+                                                    </span>
+                                                    <span>
+                                                        16:40 - 23:12
+                                                    </span>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="mapHolder">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=FU_uxQAdw_-fBCltTrTJcBauOzHgT35R6MPf-A%3BFVFylwAdXwOoBCkzlhixgsUAOzEzOfZkcluV3A&amp;q=Bangalore,+Karnataka,+India+to+Madurai,+Tamil+Nadu,+India&amp;aq=0&amp;oq=bangalore+to+madur&amp;ie=UTF8&amp;t=m&amp;saddr=Bangalore,+Karnataka,+India&amp;daddr=Madurai,+Tamil+Nadu,+India&amp;ll=10.65521,78.019409&amp;spn=0.809761,2.334595&amp;z=8&amp;output=embed"></iframe>
+        </div>
+        <div class="distancePoints">
+            300Kms <span>25 Points</span>
+
+            <div class="clear"></div>
+        </div>
+        <div class="header gray">
+            Performance
+        </div>
+        <div class="driveStats">
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">8/10</div>
+                    <div class="statGraph blue"></div>
+                    <div class="instance">Breaking</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">5/10</div>
+                    <div class="statGraph orange"></div>
+                    <div class="instance">Acceleration</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">9/10</div>
+                    <div class="statGraph green"></div>
+                    <div class="instance">Fuel Efficiency</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">4/10</div>
+                    <div class="statGraph orange"></div>
+                    <div class="instance">Day Driving</div>
+                </div>
+            </div>
+            <div class="dummyer">
+                <div class="statHolder">
+                    <div class="points">2/10</div>
+                    <div class="statGraph red"></div>
+                    <div class="instance">Night Driving</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="list pay center">
+        <div class="text">
+            You have been driving well since last few trips
+        </div>
+        <div class="divide">
+            <span>12</span>
+            <span class="pts">Points added to your insurance</span>
+        </div>
+    </div>
+
+    <!--<div class="container extra">-->
+    <!--<button>-->
+    <!--Ok Got it!-->
+    <!--</button>-->
+    <!--</div>-->
+</div>
+
+</div>
+
+<div class = "slide profile" data-slide_id="profile">
+    <div class = "form profile">
+        <div class = "container">
+            <input type="text" placeholder="User Name" class = "name" disabled/>
+        </div>
+        <div class = "container">
+            <input type="password" placeholder="Password" value = "dummypass"/>
+            <span class = "changePass">Change Password</span>
+        </div>
+        <div class = "container">
+            <input type="text" placeholder="Phone Number" disabled/>
+        </div>
+        <div class = "container">
+            <input type="text" placeholder="Device ID" disabled/>
+        </div>
+        <div class = "container">
+            <input type="text" placeholder="First Name" class = "name"/>
+        </div>
+        <div class = "container">
+            <input type="text" placeholder="Last Name"/>
+        </div>
+        <div class = "container">
+            <p class = "list">
+                <span class = "roleName">User Role</span> <span class = "dropBtn"></span>
+            </p>
+            <ul id="roles" class = "roles profile">
+                <li value="">Driver</li>
+                <li value="">Owner</li>
+            </ul>
+        </div>
+        <div class = "container">
+            <input type="text" placeholder="Email ID"/>
+        </div>
+        <div class = "container">
+            <button>
+                Save
+            </button>
+        </div>
+        <div class = "dummyContainer">
         </div>
     </div>
 </div>
@@ -707,6 +1032,24 @@
 </div>
 </div>
 
+<div class = "newPass">
+    <div class = "header">
+        Change Password <span class = "closeChangePass">x</span>
+    </div>
+    <p>
+        <input type="password" placeholder="Current password"/>
+    </p>
+    <p>
+        <input type="password" placeholder="New password"/>
+    </p>
+    <p>
+        <input type="password" placeholder="Re-type password"/>
+    </p>
+    <p>
+        <button class = "closeChangePass">RESET</button>
+    </p>
+</div>
+<div class = "screen"></div>
 <div class="driveWay">
     <div class="shade"></div>
     <img src="images/car.png" class="car">

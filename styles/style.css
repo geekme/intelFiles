@@ -107,6 +107,7 @@ body#insurance{
     margin-top: 6px;
     position: absolute;
     right: 0;
+    top: 0;
     text-align: right;
     vertical-align: middle;
 }
@@ -149,6 +150,7 @@ body#insurance{
     width: 56px;
     z-index: 100;
     right: 0px;
+    top: 5px;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -ms-transition: 0.5s all;
@@ -242,6 +244,24 @@ body#insurance{
     margin:2.5% auto;
     /*display: none;*/
 }
+#mainWrapper .content .contentArea .form .container span.changePass{
+    font-size: 14px;
+    padding-top: 5px;
+    display: inline-block;
+    cursor:pointer;
+    color: #3498db;
+}
+#mainWrapper .content .contentArea .form .container span.changePass:hover{
+    text-decoration: underline;
+}
+#mainWrapper .content .contentArea .form.profile .container{
+    width: 100%;
+    margin:2.5% auto;
+    /*display: none;*/
+}
+#mainWrapper .content .contentArea .form.profile .dummyContainer{
+    height: 300px;
+}
 #mainWrapper .content .contentArea .form .container.extra{
     width: 101.3%;
 }
@@ -253,6 +273,19 @@ body#insurance{
     border: none;
     transition: all 0.5s;
     outline: none;
+    /*background: url("../images/checkmark.png") no-repeat scroll 97% center #FFFFFF;*/
+}
+#mainWrapper .content .contentArea .form.profile{
+    width: 97%;
+}
+#mainWrapper .content .contentArea .form.profile input[type="text"]{
+    width: 97%;
+    padding:2% 1.6%;
+    font-size: 20px;
+    border: none;
+    transition: all 0.5s;
+    outline: none;
+    background: url("../images/checkmark.png") no-repeat scroll 97% center #FFFFFF;
 }
 #mainWrapper .content .contentArea .form .container .list {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -264,6 +297,24 @@ body#insurance{
     padding: 2% 1.6%;
     text-align: left;
     transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+#mainWrapper .content .contentArea .form .container .list span.roleName{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+#mainWrapper .content .contentArea .form .container .list span.dropBtn{
+    float: right;
+    width: 15px;
+    height: 10px;
+    display: block;
+    background: url('../images/grey_dropdown.png') no-repeat;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 13px;
 }
 #mainWrapper .content .contentArea .form .list .img{
     width: 31%;
@@ -338,26 +389,30 @@ body#insurance{
     width: 100%;
 }
 #mainWrapper .content .contentArea .ecoSettings {
-    background: none repeat scroll 0 0 #ffffff;
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    display: none;
     margin-left: 29px;
     padding: 20px 15px;
     position: absolute;
+    top: 5px;
     width: 497px;
-    z-index: 100001;
-    top: 0px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
-    display: none;
+    z-index: 100078;
 }
 #mainWrapper .content .contentArea .ecoSettings .switchHolder {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
     display: inline-block;
+    overflow: hidden;
     position: absolute;
-    right: 10%;
+    right: 3.3%;
+    top: 25%;
+    vertical-align: middle;
     width: 80px;
-    border-radius: 20px;
-    overflow:hidden;
-    background: #ffffff;
-    /*border:1px solid;*/box-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+    z-index: 100001;
 }
+
 #mainWrapper .content .contentArea .ecoSettings .switchHolder .switch {
     display: inline-block;
     position: relative;
@@ -511,7 +566,7 @@ body#insurance{
     /*width: 100%;*/
     margin:0 11%;
 }
-#mainWrapper .content .contentArea .form .roles {
+#mainWrapper .content .contentArea .form .roles.regPage {
     /*border: 1px solid;*/
     font-size: 20px;
     list-style: none outside none;
@@ -520,6 +575,22 @@ body#insurance{
     position: absolute;
     transition: all 0.5s ease 0s;
     width: 530px;
+    /*width: 90%;*/
+    /*height:95px;*/
+    height:0px;
+    overflow: hidden;
+    margin-top: -10px;
+}
+#mainWrapper .content .contentArea .form .roles.profile {
+    /*border: 1px solid;*/
+    font-size: 20px;
+    list-style: none outside none;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    /*width: 530px;*/
+    width: 90%;
     /*height:95px;*/
     height:0px;
     overflow: hidden;
@@ -637,13 +708,13 @@ body#insurance{
     width: 100%;
     display: none;
 }
-#mainWrapper .content .contentArea .slideHolder .slide.payer {
+#mainWrapper .content .contentArea .slideHolder .slide.profile {
     /*position: absolute;*/
     width: 100%;
-    display: block;
+    /*display: block;*/
 }
 #mainWrapper .content .contentArea .slideHolder .slide:nth-of-type(6){
-    /*display: block;*/
+    display: block;
 }
 #mainWrapper .content .contentArea .slideHolder .slide .form{
     margin-top: 0px;
@@ -1129,6 +1200,7 @@ body#insurance{
     font-size: 15px;
     display: inline-block;
     vertical-align: middle;
+    text-align: left;
 }
 
 #mainWrapper .content .contentArea .appSetting {
@@ -1255,3 +1327,60 @@ body#insurance{
 .slideHolderMain .thumb .end { overflow: hidden; height: 5px; width: 13px; }
 .slideHolderMain .disable{ display: none; }
 .noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+/*Confirm Password*/
+.newPass {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: none;
+    left: 50%;
+    margin-left: -225px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 10%;
+    width: 550px;
+    z-index: 1001;
+}
+.newPass .header{
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.newPass .header span.closeChangePass{
+    float: right;
+    cursor: pointer;
+}
+.newPass p{
+    width: 90%;
+    margin: 10px auto;
+    /*margin: 10px 0px;*/
+}
+.newPass p input[type="password"] {
+    border: 1px solid #ECEECE;
+    font-size: 20px;
+    outline: medium none;
+    padding: 2% 1.6%;
+    transition: all 0.5s ease 0s;
+    width: 97%;
+}
+.newPass p button{
+    width: 100%;
+    padding:1.8% 0;
+    font-size: 25px;
+    color:#ffffff;
+    border:none;
+    text-align: center;
+    background: #2980b9;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: 0px 3px 0px #255f91;
+    outline: none;
+}
+
+.newPass p button:hover{
+    background: #3498db;
+}
+.newPass p button:active{
+    background: #3498db;
+    box-shadow:inset 0px 3px 0px #255f91;
+}

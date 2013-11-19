@@ -6,7 +6,7 @@
 var fn = {
     dropDown:function(){
         $(window).click(function(e){
-            if(e.target.className=="list" && parseInt($('.roles').height(), 10) < 1){
+            if(e.target.className=="list" || e.target.className=="roleName" || e.target.className=="dropBtn" && parseInt($('.roles').height(), 10) < 1){
                 $('.roles').animate({
                     height:"95px"
                 }, 200);
@@ -20,7 +20,7 @@ var fn = {
     },
     selectItem:function(){
         $('.roles li').click(function(){
-            $('.list').text($(this).text())
+            $('.list').find('.roleName').text($(this).text())
         });
     },
     showLogout:function(){
@@ -173,6 +173,45 @@ var fn = {
             }
         )
     },
+    showPassChange:function(){
+        $('.changePass').click(function(){
+            if($('.newPass').hasClass("animated flipInX flipOutX")){
+                $('.newPass').removeClass('animated flipInX flipOutX');
+                $('.newPass').show().addClass('animated flipInX');
+            }
+            else{
+                $('.newPass').show().addClass('animated flipInX');
+            }
+            $('.screen').fadeIn();
+        });
+    },
+    hidePassChange:function(){
+        $('.closeChangePass').click(function(){
+            if($('.newPass').hasClass("animated flipOutX")){
+                $('.newPass').removeClass('animated flipOutX');
+                $('.newPass').addClass('animated flipOutX');
+            }
+            else{
+                $('.newPass').addClass('animated flipOutX');
+            }
+            $('.screen').fadeOut();
+        });
+    },
+    addData:function(){
+        $('.payer').find('.driveStats').each(function(key,Item){
+            var holder = $(Item).find('.statHolder');
+            holder.each(function(key, item){
+                alert("times");
+                var newValue = $(item).data("newvalue");
+                var height = 70;
+                var newHeight = parseInt(newValue * height) / 10;
+                $(item).find('statGraph');
+                $(item).find('.statGraph').css({
+                    height:newHeight
+                });
+            });
+        });
+    },
 
     execute:function(){
         fn.dropDown();
@@ -196,10 +235,13 @@ var fn = {
 
         fn.showPop();
         fn.closePop();
-
 //        fn.settingsButton();
-
         fn.switch();
+
+        fn.showPassChange();
+        fn.hidePassChange();
+
+        fn.addData();
     }
 }
 
