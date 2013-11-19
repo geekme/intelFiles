@@ -201,7 +201,7 @@ var fn = {
         $('.payer').find('.driveStats').each(function(key,Item){
             var holder = $(Item).find('.statHolder');
             holder.each(function(key, item){
-                alert("times");
+//                alert("times");
                 var newValue = $(item).data("newvalue");
                 var height = 70;
                 var newHeight = parseInt(newValue * height) / 10;
