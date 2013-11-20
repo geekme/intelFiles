@@ -144,13 +144,13 @@ var fn = {
             var getSwitch = $(this).data("switch");
             if(getSwitch == "ON"){
                 $(this).animate({
-                    marginLeft: "-80px"
+                    marginLeft: "-113px"
                 });
                 $(this).data("switch","OFF")
             }
             else{
                 $(this).animate({
-                    marginLeft: "0px"
+                    marginLeft: "20px"
                 });
                 $(this).data("switch","ON")
             }
@@ -209,6 +209,26 @@ var fn = {
                 $(item).find('.statGraph').css({
                     height:newHeight
                 });
+                var statItem = $(item).find('.statGraph');
+                function inRange(start, end, value) {
+                    if (value <= end && value >= start)
+                        return value;
+                }
+                switch(newValue){
+                        case inRange(0,3, newValue):
+                            alert("case1");
+                        statItem.css("background","#d83030");
+                        break;
+                    case inRange(3,6,newValue ):
+                        statItem.css("background","#e08827");
+                        break;
+                    case inRange(6,8, newValue):
+                        statItem.css("background","#58bc40");
+                        break;
+                    case inRange(8,11, newValue):
+                        statItem.css("background","#259dc0");
+                        break;
+                }
             });
         });
     },

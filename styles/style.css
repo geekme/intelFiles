@@ -378,6 +378,11 @@ body#insurance{
     height: 70px;
     width: 100%;
 }
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.orange{
+    background: #e08827;
+    height: 40px;
+    width: 100%;
+}
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.red{
     background: #d83030;
     height: 30px;
@@ -461,11 +466,6 @@ body#insurance{
     box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
 }
 
-#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.orange{
-    background: #e08827;
-    height: 40px;
-    width: 100%;
-}
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .instance{
     width: 90px;
     overflow: hidden;
@@ -1242,20 +1242,21 @@ body#insurance{
     vertical-align: middle;
 }
 #mainWrapper .content .contentArea .appSetting .settingsMain li .sttngName{
-    width: 80%;
+    width: 70%;
 }
 #mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain{
     /*border: 1px solid blue;*/
-    width: 78px;
+    width: 133px;
     border-radius: 15px;
     overflow: hidden;
 }
 #mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl{
     /*border: 1px solid red;*/
     font-size: 18px;
-    width: 159px;
+    width: 246px;
     position: relative;
     border-radius: 15px;
+    margin-left:20px;
 }
 #mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .on{
     background: #348cd0;
