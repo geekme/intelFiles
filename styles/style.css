@@ -95,6 +95,10 @@ body#insurance{
     color:#ffffff;
     font-size: 24px;
 }
+#mainWrapper .headerCont .title a{
+    color:#ffffff;
+    text-decoration: none;
+}
 #mainWrapper .headerCont .title span{
     font-size: 30px;
     color: #f5f040;
@@ -259,6 +263,15 @@ body#insurance{
     margin:2.5% auto;
     /*display: none;*/
 }
+#mainWrapper .content .contentArea .form.fuel .container{
+    width: 100%;
+    margin:0% auto;
+    /*display: none;*/
+}
+#mainWrapper .content .contentArea .form.fuel .list.center{
+    margin-bottom:0;
+    /*display: none;*/
+}
 #mainWrapper .content .contentArea .form.profile .dummyContainer{
     height: 300px;
 }
@@ -299,6 +312,9 @@ body#insurance{
     transition: all 0.5s ease 0s;
     cursor: pointer;
 }
+#mainWrapper .content .contentArea .form .container .list.fuelPump {
+    background: none repeat scroll 0 0 #fbefbf;
+}
 #mainWrapper .content .contentArea .form .container .list span.roleName{
     font-size: 20px;
     padding: 0;
@@ -328,13 +344,22 @@ body#insurance{
     text-align: center;
     font-size: 27px;
 }
+#mainWrapper .content .contentArea .form.fuel .list.center.map {
+    margin: -11px auto 0px auto;
+}
 #mainWrapper .content .contentArea .form .list.dummyGap {
     height:40px;
-    border:1px solid;
+    /*border:1px solid;*/
 }
 #mainWrapper .content .contentArea .form .list.center .text{
     font-size: 20px;
     color: #3498db;
+    padding: 10px 0px;
+}
+#mainWrapper .content .contentArea .form .list.center .text.green{
+    font-size: 20px;
+    color: #5e605f;
+    background: #bff1cc;
     padding: 10px 0px;
 }
 #mainWrapper .content .contentArea .form .list.center .header{
@@ -602,6 +627,14 @@ body#insurance{
 }
 #mainWrapper .content .contentArea .form .roles li:hover{
     background: #ececec;
+    cursor: pointer;
+}
+#mainWrapper .content .contentArea .form .roles.fuelPump li{
+    padding:2% 1.6%;
+    background: #fbefbf;
+}
+#mainWrapper .content .contentArea .form .roles.fuelPump li:hover{
+    background: #e3d7ad;
     cursor: pointer;
 }
 #mainWrapper .content .contentArea .form input[type="password"]{
@@ -1384,4 +1417,37 @@ body#insurance{
 .newPass p button:active{
     background: #3498db;
     box-shadow:inset 0px 3px 0px #255f91;
+}
+/*Fuel Stations*/
+.fuelStations{
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid  #ffffff ;
+    border-bottom: 1px solid #707070;
+}
+.fuelStations:hover{
+    background: #f5f5f5;
+    cursor: pointer;
+}
+.fuelStations .station{
+    margin: 10px 15px;
+    padding-bottom: 10px;
+}
+.fuelStations .station .stationName{
+    float: left;
+    width: 70%;
+}
+.fuelStations .station .stationName h2{
+    color: #18819f;
+    font-size: 20px;
+}
+.fuelStations .station .stationName p{
+    color: #8a8a8a;
+    font-size: 17px;
+}
+.fuelStations .station .stationDist{
+    color: #8a8a8a;
+    float: left;
+    text-align: right;
+    width: 27%;
 }

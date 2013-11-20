@@ -6,15 +6,15 @@
 var fn = {
     dropDown:function(){
         $(window).click(function(e){
-            if(e.target.className=="list" || e.target.className=="roleName" || e.target.className=="dropBtn" && parseInt($('.roles').height(), 10) < 1){
-                $('.roles').animate({
-                    height:"95px"
-                }, 200);
+            if((e.target.className=="list" || e.target.className=="roleName" || e.target.className=="dropBtn") && parseInt($('.roles').height(), 10) < 1){
+                $('.roles').css({
+                    height:"auto"
+                });
             }
             else{
-                $('.roles').animate({
+                $('.roles').css({
                     height:"0px"
-                }, 100);
+                });
             }
         });
     },

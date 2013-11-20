@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="878e7f9b-f257-44f4-a72e-34b0bb18af89" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feed1.html" afterPath="$PROJECT_DIR$/feed1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/script.js" afterPath="$PROJECT_DIR$/scripts/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="intelFiles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384930554540" ignored="false" />
-    <file path="/feed1.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384927684469" ignored="false" />
-    <file path="/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384926405523" ignored="false" />
+    <file path="/Dummy.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384935534930" ignored="false" />
+    <file path="/feed1.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384953663555" ignored="false" />
+    <file path="/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384953683327" ignored="false" />
     <file path="$PROJECT_DIR$/../intel/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1383980099132" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384147653692" ignored="false" />
-    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384148275889" ignored="false" />
-    <file path="/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384321580818" ignored="false" />
-    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384932676765" ignored="false" />
-    <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384162594343" ignored="false" />
-    <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384170389966" ignored="false" />
-    <file path="/script.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384928421204" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384945740562" ignored="false" />
+    <file path="/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384942210288" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384946158920" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384943410592" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384935744693" ignored="false" />
+    <file path="/script.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384950870157" ignored="false" />
     <file path="/regPage.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384169292830" ignored="false" />
-    <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384171334024" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384941060769" ignored="false" />
     <file path="$PROJECT_DIR$/../ais/css/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384330398689" ignored="false" />
     <file path="$PROJECT_DIR$/../ais/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384321588353" ignored="false" />
     <file path="/stylesheet.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384245521451" ignored="false" />
@@ -30,7 +33,14 @@
     <file path="/myCategory.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384329543404" ignored="false" />
     <file path="$PROJECT_DIR$/../ais/myVideos.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384330295970" ignored="false" />
     <file path="/myVideos.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384330295970" ignored="false" />
-    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384932676765" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384950042595" ignored="false" />
+    <file path="/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384948885982" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384943322075" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/unsubAccount.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384946910361" ignored="false" />
+    <file path="/unsubAccount.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384946864071" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/playlists/playBack.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384948414859" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/confirmUnsub.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384948851340" ignored="false" />
+    <file path="/confirmUnsub.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384948851340" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +63,7 @@
       <file leaf-file-name="feed1.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feed1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="286" column="58" selection-start="11286" selection-end="11286" vertical-scroll-proportion="-6.901961">
+            <state line="670" column="65" selection-start="27029" selection-end="27029" vertical-scroll-proportion="-3.235294">
               <folding />
             </state>
           </provider>
@@ -87,7 +97,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="376" column="23" selection-start="9028" selection-end="9034" vertical-scroll-proportion="-4.92">
+            <state line="636" column="23" selection-start="16087" selection-end="16093" vertical-scroll-proportion="-15.8">
               <folding />
             </state>
           </provider>
@@ -105,7 +115,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="56" selection-start="7331" selection-end="7331" vertical-scroll-proportion="0.47262773">
+            <state line="8" column="110" selection-start="258" selection-end="258" vertical-scroll-proportion="0.19502868">
               <folding />
             </state>
           </provider>
@@ -114,7 +124,7 @@
       <file leaf-file-name="settings.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="35" selection-start="5394" selection-end="5394" vertical-scroll-proportion="0.0">
+            <state line="136" column="35" selection-start="5394" selection-end="5394" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -140,8 +150,8 @@
       <list>
         <option value="$PROJECT_DIR$/styles/animate.css" />
         <option value="$PROJECT_DIR$/regPage.html" />
-        <option value="$PROJECT_DIR$/styles/style.css" />
         <option value="$PROJECT_DIR$/feed1.html" />
+        <option value="$PROJECT_DIR$/styles/style.css" />
         <option value="$PROJECT_DIR$/scripts/script.js" />
       </list>
     </option>
@@ -425,28 +435,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="35" selection-start="5394" selection-end="5394" vertical-scroll-proportion="0.0">
+        <state line="136" column="35" selection-start="5394" selection-end="5394" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feed1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="58" selection-start="11286" selection-end="11286" vertical-scroll-proportion="-6.901961">
+        <state line="670" column="65" selection-start="27029" selection-end="27029" vertical-scroll-proportion="-3.235294">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="376" column="23" selection-start="9028" selection-end="9034" vertical-scroll-proportion="-4.92">
+        <state line="636" column="23" selection-start="16087" selection-end="16093" vertical-scroll-proportion="-15.8">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="56" selection-start="7331" selection-end="7331" vertical-scroll-proportion="0.47262773">
+        <state line="8" column="110" selection-start="258" selection-end="258" vertical-scroll-proportion="0.19502868">
           <folding />
         </state>
       </provider>
