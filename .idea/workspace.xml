@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="878e7f9b-f257-44f4-a72e-34b0bb18af89" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feed1.html" afterPath="$PROJECT_DIR$/feed1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/script.js" afterPath="$PROJECT_DIR$/scripts/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="intelFiles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384923629750" ignored="false" />
+    <file path="/Dummy.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384930554540" ignored="false" />
     <file path="/feed1.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384927684469" ignored="false" />
     <file path="/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384926405523" ignored="false" />
     <file path="$PROJECT_DIR$/../intel/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1383980099132" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384147653692" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VVA/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384148275889" ignored="false" />
     <file path="/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384321580818" ignored="false" />
-    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384148487265" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384932676765" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384162594343" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384170389966" ignored="false" />
     <file path="/script.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384928421204" ignored="false" />
@@ -33,6 +30,7 @@
     <file path="/myCategory.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384329543404" ignored="false" />
     <file path="$PROJECT_DIR$/../ais/myVideos.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384330295970" ignored="false" />
     <file path="/myVideos.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384330295970" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384932676765" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="33" selection-start="8041" selection-end="8041" vertical-scroll-proportion="0.6277372">
+            <state line="211" column="56" selection-start="7331" selection-end="7331" vertical-scroll-proportion="0.47262773">
               <folding />
             </state>
           </provider>
@@ -234,7 +232,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vodafone_smart_VCTV" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vodafone_smart_VVA" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -448,7 +446,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="33" selection-start="8041" selection-end="8041" vertical-scroll-proportion="0.6277372">
+        <state line="211" column="56" selection-start="7331" selection-end="7331" vertical-scroll-proportion="0.47262773">
           <folding />
         </state>
       </provider>

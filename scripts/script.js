@@ -216,7 +216,6 @@ var fn = {
                 }
                 switch(newValue){
                         case inRange(0,3, newValue):
-                            alert("case1");
                         statItem.css("background","#d83030");
                         break;
                     case inRange(3,6,newValue ):
