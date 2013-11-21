@@ -382,47 +382,46 @@ body#insurance{
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats {
     display: inline-block;
-    height: 160px;
     vertical-align: bottom;
-    position: relative;
 }
-#mainWrapper .content .contentArea .form .list.center .driveStats .dummyer{
-    width: 88px;
-    display: inline-block;
-    margin: 5px;
+#mainWrapper .content .contentArea .form .list.center .driveStats .dummyer {
+    border-bottom: 2px solid #8A8A8A;
+    /*display: inline-block;*/
+    margin: 12px 5px;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
-    width: 88px;
-    padding-bottom: 10px;
-}
-#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .points{
-    font-size: 17px;
+    /*width: 88px;*/
     width: 100%;
-    height: auto;
+    padding-bottom: 10px;
+    text-align: left;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .points {
+    /*border: 1px solid;*/
     display: inline-block;
+    font-size: 17px;
+    height: auto;
     vertical-align: middle;
+    width: 65px;
+}
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph {
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    width: 340px;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.blue{
     background: #259dc0;
-    height: 70px;
-    width: 100%;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.orange{
     background: #e08827;
-    height: 40px;
-    width: 100%;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.red{
     background: #d83030;
-    height: 30px;
-    width: 100%;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.green{
     background: #58bc40;
-    height: 80px;
-    width: 100%;
 }
 #mainWrapper .content .contentArea .ecoSettings {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -496,13 +495,16 @@ body#insurance{
     background: white;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
 }
-
-#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .instance{
-    width: 90px;
+#mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .instance {
+    /*border: 1px solid;*/
+    display: inline-block;
+    font-size: 15px;
     overflow: hidden;
+    text-align: left;
     text-overflow: ellipsis;
+    vertical-align: middle;
     white-space: nowrap;
-    font-size: 13px;
+    width: 90px;
 }
 #mainWrapper .content .contentArea .form .list.center .header .rightItem{
     float: right;

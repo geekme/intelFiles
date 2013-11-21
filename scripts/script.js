@@ -203,11 +203,12 @@ var fn = {
             holder.each(function(key, item){
 //                alert("times");
                 var newValue = $(item).data("newvalue");
-                var height = 70;
+                var height = 340;
                 var newHeight = parseInt(newValue * height) / 10;
                 $(item).find('statGraph');
                 $(item).find('.statGraph').css({
-                    height:newHeight
+//                    height:newHeight
+                    width:newHeight
                 });
                 var statItem = $(item).find('.statGraph');
                 function inRange(start, end, value) {
