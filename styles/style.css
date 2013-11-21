@@ -362,6 +362,12 @@ body#insurance{
     background: #bff1cc;
     padding: 10px 0px;
 }
+#mainWrapper .content .contentArea .form .list.center .text.blue{
+    font-size: 20px;
+    color: #ffffff;
+    background: #7ebad6;
+    padding: 10px 0px;
+}
 #mainWrapper .content .contentArea .form .list.center .header{
     margin: 0px auto;
     font-size: 15px;
