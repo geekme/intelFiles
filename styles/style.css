@@ -248,6 +248,10 @@ body#insurance{
     margin:2.5% auto;
     /*display: none;*/
 }
+#mainWrapper .content .contentArea .form .container.insurance{
+    width: auto;
+    margin: 2%;
+}
 #mainWrapper .content .contentArea .form .container span.changePass{
     font-size: 14px;
     padding-top: 5px;
@@ -299,6 +303,9 @@ body#insurance{
     transition: all 0.5s;
     outline: none;
     background: url("../images/checkmark.png") no-repeat scroll 97% center #FFFFFF;
+}
+#mainWrapper .content .contentArea .form .insurance input[type="text"]{
+    border: 1px solid #d8d8d8;
 }
 #mainWrapper .content .contentArea .form .container .list {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -628,6 +635,9 @@ body#insurance{
     height:0px;
     overflow: hidden;
     margin-top: -10px;
+}
+#mainWrapper .content .contentArea .form .roles.insurance {
+    width: 86%;
 }
 #mainWrapper .content .contentArea .form .roles li{
     padding:2% 1.6%;
@@ -1254,6 +1264,9 @@ body#insurance{
     color: #6F6F6F;
     margin:2%
 }
+#mainWrapper .content .contentArea .appSetting .settingItem{
+    display: none;
+}
 #mainWrapper .content .contentArea .mainHeading{
     font-size: 20px;
     padding: 10px 15px 10px 6%;
@@ -1285,32 +1298,32 @@ body#insurance{
 #mainWrapper .content .contentArea .appSetting .settingsMain li .sttngName{
     width: 70%;
 }
-#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain{
-    /*border: 1px solid blue;*/
-    width: 133px;
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain {
     border-radius: 15px;
     overflow: hidden;
+    width: 130px;
 }
-#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl{
-    /*border: 1px solid red;*/
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl {
+    border-radius: 15px;
     font-size: 18px;
-    width: 246px;
+    /*margin-left: 20px;*/
     position: relative;
-    border-radius: 15px;
-    margin-left:20px;
+    width: 269px;
 }
-#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .on{
-    background: #348cd0;
-    padding: 3px 9px;
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .on {
+    background: none repeat scroll 0 0 #348CD0;
     border-radius: 15px;
-    color: #ffffff;
+    color: #FFFFFF;
+    padding: 3px 9px;
+    width: 110px;
 }
-#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .off{
-    background: #707070;
-    padding: 3px 9px;
+#mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .off {
+    background: none repeat scroll 0 0 #707070;
     border-radius: 15px;
-    color: #c5c5c5;
+    color: #C5C5C5;
     margin-left: 7px;
+    padding: 3px 9px;
+    width: 110px;
 }
 #mainWrapper .content .contentArea .appSetting .settingsMain li .sttngCntrlMain .sttngCntrl .round{
     height: 17px;

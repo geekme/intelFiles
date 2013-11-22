@@ -142,17 +142,42 @@ var fn = {
         //Another Switch
         $('.sttngCntrl').click(function(){
             var getSwitch = $(this).data("switch");
+
+            //Show or hide Insurance thing
+            if($(this).data("switchcase") == "optin"){
+                $('.appSetting').find('[data-settingitem="insurance"]').slideDown();
+            }
+            else{
+                $('.appSetting').find('[data-settingitem="insurance"]').slideUp();
+            }
+
             if(getSwitch == "ON"){
                 $(this).animate({
-                    marginLeft: "-113px"
+                    marginLeft: "-140px"
                 });
                 $(this).data("switch","OFF")
+                $(this).data("switchcase","optout")
             }
             else{
                 $(this).animate({
-                    marginLeft: "20px"
+                    marginLeft: "0px"
                 });
                 $(this).data("switch","ON")
+                $(this).data("switchcase","optin")
+            }
+            fn.hidePassChange('alert');
+        });
+    },
+
+    submitInsirance:function(){
+        $('[data-insurance="submit"]').click(function(){
+            $('[data-alertbox="alert"]').addClass("hello");
+            if($('[data-alertbox="alert"]').hasClass("animated flipInX flipOutX")){
+                $('[data-alertbox="alert"]').removeClass('animated flipInX flipOutX');
+                $('[data-alertbox="alert"]').show().addClass('animated flipInX');
+            }
+            else{
+                $('[data-alertbox="alert"]').show().addClass('animated flipInX');
             }
         });
     },
@@ -175,26 +200,43 @@ var fn = {
     },
     showPassChange:function(){
         $('.changePass').click(function(){
-            if($('.newPass').hasClass("animated flipInX flipOutX")){
-                $('.newPass').removeClass('animated flipInX flipOutX');
-                $('.newPass').show().addClass('animated flipInX');
+            if($('[data-alertbox="passcahange"]').hasClass("animated flipInX flipOutX")){
+                $('[data-alertbox="passcahange"]').removeClass('animated flipInX flipOutX');
+                $('[data-alertbox="passcahange"]').show().addClass('animated flipInX');
             }
             else{
-                $('.newPass').show().addClass('animated flipInX');
+                $('[data-alertbox="passcahange"]').show().addClass('animated flipInX');
             }
             $('.screen').fadeIn();
         });
     },
-    hidePassChange:function(){
+    hidePassChange:function(param){
         $('.closeChangePass').click(function(){
-            if($('.newPass').hasClass("animated flipOutX")){
-                $('.newPass').removeClass('animated flipOutX');
-                $('.newPass').addClass('animated flipOutX');
+            switch(param){
+                case 'changePass':
+                    if($('[data-alertbox="passcahange"]').hasClass("animated flipOutX")){
+                        $('[data-alertbox="passcahange"]').removeClass('animated flipOutX');
+                        $('[data-alertbox="passcahange"]').addClass('animated flipOutX');
+                    }
+                    else{
+                        $('[data-alertbox="passcahange"]').addClass('animated flipOutX');
+                    }
+                    $('.screen').fadeOut();
+                    return false;
+                    break;
+                case 'alert':
+                    if($('[data-alertbox="alert"]').hasClass("animated flipOutX")){
+                        $('[data-alertbox="alert"]').removeClass('animated flipOutX');
+                        $('[data-alertbox="alert"]').addClass('animated flipOutX');
+                    }
+                    else{
+                        $('[data-alertbox="alert"]').addClass('animated flipOutX');
+                    }
+                    $('.screen').fadeOut();
+                    return false;
+                    break;
             }
-            else{
-                $('.newPass').addClass('animated flipOutX');
-            }
-            $('.screen').fadeOut();
+
         });
     },
     addData:function(){
@@ -259,9 +301,11 @@ var fn = {
         fn.switch();
 
         fn.showPassChange();
-        fn.hidePassChange();
+        fn.hidePassChange('changePass');
 
         fn.addData();
+
+        fn.submitInsirance();
     }
 }
 

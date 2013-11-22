@@ -149,34 +149,40 @@
         </div>
 
         <div class="appSetting">
-            <div class="heading">Fuel Monitoring</div>
+            <div class="heading">Insurance Settings</div>
             <ul class="settingsMain">
                 <li>
-                            <span class="sttngName">
-                               Fuel Level Notifier
-                            </span>
-                            <span class="sttngCntrlMain" >
-                                  <span class="sttngCntrl" data-switch="ON">
-                                    <span class="on"><span class="round"></span> <span>ON</span></span>
-                                    <span class="off"><span class="round"></span> <span>OFF</span></span>
-                                  </span>
-                            </span>
+                    <span class="sttngName">
+                        Insurance Option
+                    </span>
+                    <span class="sttngCntrlMain" >
+                        <span class="sttngCntrl" data-switchcase = "optin" data-switch="ON">
+                            <span class="on"><span class="round"></span> <span>OPT IN</span></span>
+                            <span class="off"><span class="round"></span> <span>OPT OUT</span></span>
+                        </span>
+                    </span>
                 </li>
-                <li>
-                            <span class="sttngName">
-                                Fuel Station Notifier
-                            </span>
-                            <span class="sttngCntrlMain" >
-                                  <span class="sttngCntrl" data-switch="ON">
-                                    <span class="on"><span class="round"></span> <span>ON</span></span>
-                                    <span class="off"><span class="round"></span> <span>OFF</span></span>
-                                  </span>
-                            </span>
-                </li>
-
             </ul>
+        <div data-settingitem = "insurance" class = "settingItem">
+            <div class = "container insurance">
+                <p class = "list">
+                    <span class = "roleName">Insurance Provider</span> <span class = "dropBtn"></span>
+                </p>
+                <ul id="insuranceCompanies" class = "roles profile insurance">
+                    <li value="">Insurance Provider 1</li>
+                    <li value="">Insurance Provider 2</li>
+                </ul>
+            </div>
+            <div class = "container insurance">
+                <input type="text" placeholder="Policy Number"/>
+            </div>
+            <div class = "container insurance">
+                <button data-insurance = "submit">
+                    Submit
+                </button>
+            </div>
         </div>
-
+        </div>
         <div class="appSetting">
             <div class="heading">Fuel Monitoring</div>
             <ul class="settingsMain">
@@ -1227,7 +1233,7 @@
 </div>
 </div>
 
-<div class = "newPass">
+<div class = "newPass" data-alertbox = "passcahange">
     <div class = "header">
         Change Password <span class = "closeChangePass">x</span>
     </div>
@@ -1242,6 +1248,18 @@
     </p>
     <p>
         <button class = "closeChangePass">RESET</button>
+    </p>
+</div>
+
+<div class = "newPass" data-alertbox = "alert">
+    <div class = "header">
+        Alert Box <span class = "closeChangePass">x</span>
+    </div>
+    <p>
+        Success.!
+    </p>
+    <p>
+        <button class = "closeChangePass">OK</button>
     </p>
 </div>
 <div class = "screen"></div>
