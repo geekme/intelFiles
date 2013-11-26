@@ -533,6 +533,9 @@ body#insurance{
     text-align: left;
     font-size: 20px;
 }
+#mainWrapper .content .contentArea .form .list.center .distancePoints.small{
+    font-size: 14px;
+}
 #mainWrapper .content .contentArea .form .list.center .distancePoints span{
     float: right;
     font-size: inherit;
@@ -605,6 +608,9 @@ body#insurance{
 #mainWrapper .content .contentArea .form .list.center img{
     /*width: 100%;*/
     margin:0 11%;
+}
+#mainWrapper .content .contentArea .form .list.center .starRating img{
+    margin: 0;
 }
 #mainWrapper .content .contentArea .form .roles.regPage {
     /*border: 1px solid;*/
@@ -1471,4 +1477,82 @@ body#insurance{
     float: left;
     text-align: right;
     width: 27%;
+}
+/*Fuel Stations Fuel Map*/
+.fuelStations.fuelMap{
+    width: 100%;
+    background: #ffffff;
+    text-align: left;
+    border-top: 1px solid  #ffffff ;
+    border-bottom: 1px solid #707070;
+}
+.fuelStations:hover{
+    background: #f5f5f5;
+    cursor: pointer;
+}
+.fuelStations .station{
+    margin: 10px 15px;
+    padding-bottom: 10px;
+}
+.fuelStations .station .stationName{
+    float: left;
+    width: 70%;
+}
+.fuelStations .station .stationName h2{
+    color: #18819f;
+    font-size: 20px;
+}
+.fuelStations .station .stationName p{
+    color: #8a8a8a;
+    font-size: 17px;
+}
+.fuelStations .station .stationDist{
+    color: #8a8a8a;
+    float: left;
+    text-align: right;
+    width: 27%;
+}
+.fuelStations .station .starRating{
+    width: 120px;
+    float: right;
+}
+.fuelCounter span{
+    border: none;
+    font-size: 12px;
+}
+.fuelCounter .actualQuantity{
+    float: left;
+    width: 47%;
+    background: #9f9f9f;
+    font-size: 35px;
+    text-align: center;
+    color: #383838;
+    padding: 2px 0px;
+    border-right: 2px solid #383838;
+}
+.fuelCounter .litre{
+    border: none;
+}
+.fuelCounter .showQuantity{
+    float: left;
+    width: 30%;
+    background: #9f9f9f;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px 0px;
+}
+.fuelCounter .Images{
+    float: left;
+    width: 119px;
+    background: #c3c3c3;
+}
+.fuelCounter .Images img{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    cursor: pointer;
+}
+.fuelCounter .Images img:first-child{
+    border-right: 2px solid #808080;
 }

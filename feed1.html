@@ -155,33 +155,33 @@
                     <span class="sttngName">
                         Insurance Option
                     </span>
-                    <span class="sttngCntrlMain" >
-                        <span class="sttngCntrl" data-switchcase = "optin" data-switch="ON">
+                    <span class="sttngCntrlMain">
+                        <span class="sttngCntrl" data-switchcase="optin" data-switch="ON">
                             <span class="on"><span class="round"></span> <span>OPT IN</span></span>
                             <span class="off"><span class="round"></span> <span>OPT OUT</span></span>
                         </span>
                     </span>
                 </li>
             </ul>
-        <div data-settingitem = "insurance" class = "settingItem">
-            <div class = "container insurance">
-                <p class = "list">
-                    <span class = "roleName">Insurance Provider</span> <span class = "dropBtn"></span>
-                </p>
-                <ul id="insuranceCompanies" class = "roles profile insurance">
-                    <li value="">Insurance Provider 1</li>
-                    <li value="">Insurance Provider 2</li>
-                </ul>
+            <div data-settingitem="insurance" class="settingItem">
+                <div class="container insurance">
+                    <p class="list">
+                        <span class="roleName">Insurance Provider</span> <span class="dropBtn"></span>
+                    </p>
+                    <ul id="insuranceCompanies" class="roles profile insurance">
+                        <li value="">Insurance Provider 1</li>
+                        <li value="">Insurance Provider 2</li>
+                    </ul>
+                </div>
+                <div class="container insurance">
+                    <input type="text" placeholder="Policy Number"/>
+                </div>
+                <div class="container insurance">
+                    <button data-insurance="submit">
+                        Submit
+                    </button>
+                </div>
             </div>
-            <div class = "container insurance">
-                <input type="text" placeholder="Policy Number"/>
-            </div>
-            <div class = "container insurance">
-                <button data-insurance = "submit">
-                    Submit
-                </button>
-            </div>
-        </div>
         </div>
         <div class="appSetting">
             <div class="heading">Fuel Monitoring</div>
@@ -219,7 +219,7 @@
                             <span class="sttngName">
                                Fuel Level Notifier
                             </span>
-                            <span class="sttngCntrlMain" >
+                            <span class="sttngCntrlMain">
                                   <span class="sttngCntrl" data-switch="ON">
                                     <span class="on"><span class="round"></span> <span>ON</span></span>
                                     <span class="off"><span class="round"></span> <span>OFF</span></span>
@@ -230,7 +230,7 @@
                             <span class="sttngName">
                                 Fuel Station Notifier
                             </span>
-                            <span class="sttngCntrlMain" >
+                            <span class="sttngCntrlMain">
                                   <span class="sttngCntrl" data-switch="ON">
                                     <span class="on"><span class="round"></span> <span>ON</span></span>
                                     <span class="off"><span class="round"></span> <span>OFF</span></span>
@@ -275,7 +275,7 @@
         </div>
         <div class="driveStats">
             <div class="dummyer">
-                <div class="statHolder" data-newvalue = "8" >
+                <div class="statHolder" data-newvalue="8">
                     <div class="instance">Breaking</div>
                     <div class="statGraph"></div>
                     <div class="points">8/10</div>
@@ -284,7 +284,7 @@
                 </div>
             </div>
             <div class="dummyer">
-                <div class="statHolder" data-newvalue = "5" >
+                <div class="statHolder" data-newvalue="5">
                     <div class="instance">Acceleration</div>
                     <div class="statGraph"></div>
                     <div class="points">5/10</div>
@@ -293,7 +293,7 @@
                 </div>
             </div>
             <div class="dummyer">
-                <div class="statHolder" data-newvalue = "3" >
+                <div class="statHolder" data-newvalue="3">
                     <div class="instance">Fuel Efficiency</div>
                     <div class="statGraph"></div>
                     <div class="points">9/10</div>
@@ -302,7 +302,7 @@
                 </div>
             </div>
             <div class="dummyer">
-                <div class="statHolder" data-newvalue = "1" >
+                <div class="statHolder" data-newvalue="1">
                     <div class="instance">Day Driving</div>
                     <div class="statGraph"></div>
                     <div class="points">4/10</div>
@@ -684,83 +684,87 @@
                 There are 3 Fuel Stations in next 5kms
             </div>
         </div>
-        <div class = "container">
-            <p class = "list fuelPump">
-                <span class = "roleName">Fuel Stations nearby </span> <span class = "dropBtn"></span>
+        <div class="container">
+            <p class="list fuelPump">
+                <span class="roleName">Fuel Stations nearby </span> <span class="dropBtn"></span>
             </p>
-            <ul id="fuelStations" class = "roles profile fuelPump">
+            <ul id="fuelStations" class="roles profile fuelPump">
                 <li value="">Fuel Station 1</li>
                 <li value="">Fuel Station 2</li>
                 <li value="">Fuel Station 3</li>
             </ul>
         </div>
-        <div class = "list center map">
+        <div class="list center map">
             <div class="mapHolder">
                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=FU_uxQAdw_-fBCltTrTJcBauOzHgT35R6MPf-A%3BFVFylwAdXwOoBCkzlhixgsUAOzEzOfZkcluV3A&amp;q=Bangalore,+Karnataka,+India+to+Madurai,+Tamil+Nadu,+India&amp;aq=0&amp;oq=bangalore+to+madur&amp;ie=UTF8&amp;t=m&amp;saddr=Bangalore,+Karnataka,+India&amp;daddr=Madurai,+Tamil+Nadu,+India&amp;ll=10.65521,78.019409&amp;spn=0.809761,2.334595&amp;z=8&amp;output=embed"></iframe>
             </div>
         </div>
         <!--Fuel Stations-->
-        <div class = "fuelStations">
-            <div class = "station">
-                <div class = "stationName">
+        <div class="fuelStations">
+            <div class="station">
+                <div class="stationName">
                     <h2>HJ Fuel Station</h2>
+
                     <p>12th main, 4th Cross, Maratahalli</p>
                 </div>
-                <div class = "stationDist">
+                <div class="stationDist">
                     3.4 <br> km
                 </div>
 
-                <div class = "clear"></div>
+                <div class="clear"></div>
             </div>
         </div>
 
-        <div class = "fuelStations">
-            <div class = "station">
-                <div class = "stationName">
+        <div class="fuelStations">
+            <div class="station">
+                <div class="stationName">
                     <h2>HJ Fuel Station</h2>
+
                     <p>12th main, 4th Cross, Maratahalli</p>
                 </div>
-                <div class = "stationDist">
+                <div class="stationDist">
                     3.4 <br> km
                 </div>
 
-                <div class = "clear"></div>
+                <div class="clear"></div>
             </div>
         </div>
 
-        <div class = "fuelStations">
-            <div class = "station">
-                <div class = "stationName">
+        <div class="fuelStations">
+            <div class="station">
+                <div class="stationName">
                     <h2>HJ Fuel Station</h2>
+
                     <p>12th main, 4th Cross, Maratahalli</p>
                 </div>
-                <div class = "stationDist">
+                <div class="stationDist">
                     3.4 <br> km
                 </div>
 
-                <div class = "clear"></div>
+                <div class="clear"></div>
             </div>
         </div>
 
-        <div class = "fuelStations">
-            <div class = "station">
-                <div class = "stationName">
+        <div class="fuelStations">
+            <div class="station">
+                <div class="stationName">
                     <h2>HJ Fuel Station</h2>
+
                     <p>12th main, 4th Cross, Maratahalli</p>
                 </div>
-                <div class = "stationDist">
+                <div class="stationDist">
                     3.4 <br> km
                 </div>
 
-                <div class = "clear"></div>
+                <div class="clear"></div>
             </div>
         </div>
 
-            <div class = "list dummyGap"></div>
-            <div class = "list dummyGap"></div>
-            <div class = "list dummyGap"></div>
-            <div class = "list dummyGap"></div>
+        <div class="list dummyGap"></div>
+        <div class="list dummyGap"></div>
+        <div class="list dummyGap"></div>
+        <div class="list dummyGap"></div>
     </div>
 </div>
 
@@ -771,76 +775,80 @@
                 There are 3 Fuel Stations in next 5kms
             </div>
         </div>
-        <div class = "container">
-            <p class = "list fuelPump">
-                <span class = "roleName">Fuel Stations nearby </span> <span class = "dropBtn"></span>
+        <div class="container">
+            <p class="list fuelPump">
+                <span class="roleName">Fuel Stations nearby </span> <span class="dropBtn"></span>
             </p>
-            <ul id="fuelPilferage" class = "roles profile fuelPump">
+            <ul id="fuelPilferage" class="roles profile fuelPump">
                 <li value="">Fuel Station 1</li>
                 <li value="">Fuel Station 2</li>
                 <li value="">Fuel Station 3</li>
             </ul>
         </div>
-        <div class = "list center map">
+        <div class="list center map">
             <div class="mapHolder">
                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=FU_uxQAdw_-fBCltTrTJcBauOzHgT35R6MPf-A%3BFVFylwAdXwOoBCkzlhixgsUAOzEzOfZkcluV3A&amp;q=Bangalore,+Karnataka,+India+to+Madurai,+Tamil+Nadu,+India&amp;aq=0&amp;oq=bangalore+to+madur&amp;ie=UTF8&amp;t=m&amp;saddr=Bangalore,+Karnataka,+India&amp;daddr=Madurai,+Tamil+Nadu,+India&amp;ll=10.65521,78.019409&amp;spn=0.809761,2.334595&amp;z=8&amp;output=embed"></iframe>
             </div>
         </div>
         <!--Fuel Stations-->
-        <div class = "fuelStations">
-            <div class = "station">
-                <div class = "stationName">
+        <div class="fuelStations">
+            <div class="station">
+                <div class="stationName">
                     <h2>HJ Fuel Station</h2>
+
                     <p>12th main, 4th Cross, Maratahalli</p>
                 </div>
-                <div class = "stationDist">
+                <div class="stationDist">
                     3.4 <br> km
                 </div>
 
-                <div class = "clear"></div>
+                <div class="clear"></div>
             </div>
         </div>
 
-        <div class = "fuelStations">
-            <div class = "station">
-                <div class = "stationName">
+        <div class="fuelStations">
+            <div class="station">
+                <div class="stationName">
                     <h2>HJ Fuel Station</h2>
+
                     <p>12th main, 4th Cross, Maratahalli</p>
                 </div>
-                <div class = "stationDist">
+                <div class="stationDist">
                     3.4 <br> km
                 </div>
 
-                <div class = "clear"></div>
+                <div class="clear"></div>
             </div>
         </div>
 
-        <div class = "fuelStations">
-            <div class = "station">
-                <div class = "stationName">
+        <div class="fuelStations">
+            <div class="station">
+                <div class="stationName">
                     <h2>HJ Fuel Station</h2>
+
                     <p>12th main, 4th Cross, Maratahalli</p>
                 </div>
-                <div class = "stationDist">
+                <div class="stationDist">
                     3.4 <br> km
                 </div>
 
-                <div class = "clear"></div>
+                <div class="clear"></div>
             </div>
         </div>
 
-        <div class = "fuelStations">
-            <div class = "station">
-                <div class = "stationName">
+        <div class="fuelStations">
+            <div class="station">
+                <div class="stationName">
                     <h2>HJ Fuel Station</h2>
+
                     <p>12th main, 4th Cross, Maratahalli</p>
                 </div>
-                <div class = "stationDist">
+                <div class="stationDist">
                     3.4 <br> km
                 </div>
 
-                <div class = "clear"></div>
+                <div class="clear"></div>
             </div>
         </div>
 
@@ -849,28 +857,56 @@
                 Re-Fueling
                 <div class="rightItem">
                     <span>12.11.2013</span>
-                    <span>16:40 - 23:12</span>
+                    <span>23:12</span>
                 </div>
 
                 <div class="clear"></div>
             </div>
         </div>
-        <div class = "list center map">
+        <div class="list center map">
             <div class="mapHolder">
                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=FU_uxQAdw_-fBCltTrTJcBauOzHgT35R6MPf-A%3BFVFylwAdXwOoBCkzlhixgsUAOzEzOfZkcluV3A&amp;q=Bangalore,+Karnataka,+India+to+Madurai,+Tamil+Nadu,+India&amp;aq=0&amp;oq=bangalore+to+madur&amp;ie=UTF8&amp;t=m&amp;saddr=Bangalore,+Karnataka,+India&amp;daddr=Madurai,+Tamil+Nadu,+India&amp;ll=10.65521,78.019409&amp;spn=0.809761,2.334595&amp;z=8&amp;output=embed"></iframe>
             </div>
+            <div class="fuelStations fuelMap">
+                <div class="station">
+                    <div class="stationName">
+                        <h2>HJ Fuel Station</h2>
 
-            <div class="distancePoints">
-                30 Ltrs Re-Fuelled <span>12 Ltrs in Tank</span>
+                        <p>12th main, 4th Cross, Maratahalli</p>
+                    </div>
+                    <div class = "starRating"></div>
 
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="distancePoints small">
+                <!--30 Ltrs Re-Fuelled <span>12 Ltrs in Tank</span>-->
+                12 Ltrs in Tank
                 <div class="clear"></div>
             </div>
         </div>
-        <div class = "list dummyGap"></div>
-        <div class = "list dummyGap"></div>
-        <div class = "list dummyGap"></div>
-        <div class = "list dummyGap"></div>
+        <div class = "fuelCounter">
+            <div class = "actualQuantity">
+                11.97 <span class = "litre">LTRS.</span>
+            </div>
+            <div class = "showQuantity">
+                12 <span class = "litre">LTRS.</span>
+            </div>
+            <div class = "Images">
+                <img src="images/plus_03.jpg" alt=""/>
+                <img src="images/MINUS_03.jpg" alt=""/>
+
+                <div class = "clear"></div>
+            </div>
+
+            <div class = "clear"></div>
+        </div>
+        <div class="list dummyGap"></div>
+        <div class="list dummyGap"></div>
+        <div class="list dummyGap"></div>
+        <div class="list dummyGap"></div>
     </div>
 </div>
 <div class="slide" data-slide_id="geoFence">
@@ -1184,45 +1220,45 @@
 
 </div>
 
-<div class = "slide profile" data-slide_id="profile">
-    <div class = "form profile">
-        <div class = "container">
-            <input type="text" placeholder="User Name" class = "name" disabled/>
+<div class="slide profile" data-slide_id="profile">
+    <div class="form profile">
+        <div class="container">
+            <input type="text" placeholder="User Name" class="name" disabled/>
         </div>
-        <div class = "container">
-            <input type="password" placeholder="Password" value = "dummypass"/>
-            <span class = "changePass">Change Password</span>
+        <div class="container">
+            <input type="password" placeholder="Password" value="dummypass"/>
+            <span class="changePass">Change Password</span>
         </div>
-        <div class = "container">
+        <div class="container">
             <input type="text" placeholder="Phone Number" disabled/>
         </div>
-        <div class = "container">
+        <div class="container">
             <input type="text" placeholder="Device ID" disabled/>
         </div>
-        <div class = "container">
-            <input type="text" placeholder="First Name" class = "name"/>
+        <div class="container">
+            <input type="text" placeholder="First Name" class="name"/>
         </div>
-        <div class = "container">
+        <div class="container">
             <input type="text" placeholder="Last Name"/>
         </div>
-        <div class = "container">
-            <p class = "list">
-                <span class = "roleName">User Role</span> <span class = "dropBtn"></span>
+        <div class="container">
+            <p class="list">
+                <span class="roleName">User Role</span> <span class="dropBtn"></span>
             </p>
-            <ul id="roles" class = "roles profile">
+            <ul id="roles" class="roles profile">
                 <li value="">Driver</li>
                 <li value="">Owner</li>
             </ul>
         </div>
-        <div class = "container">
+        <div class="container">
             <input type="text" placeholder="Email ID"/>
         </div>
-        <div class = "container">
+        <div class="container">
             <button>
                 Save
             </button>
         </div>
-        <div class = "dummyContainer">
+        <div class="dummyContainer">
         </div>
     </div>
 </div>
@@ -1233,36 +1269,41 @@
 </div>
 </div>
 
-<div class = "newPass" data-alertbox = "passcahange">
-    <div class = "header">
-        Change Password <span class = "closeChangePass">x</span>
+<div class="newPass" data-alertbox="passcahange">
+    <div class="header">
+        Change Password <span class="closeChangePass">x</span>
     </div>
     <p>
         <input type="password" placeholder="Current password"/>
     </p>
+
     <p>
         <input type="password" placeholder="New password"/>
     </p>
+
     <p>
         <input type="password" placeholder="Re-type password"/>
     </p>
+
     <p>
-        <button class = "closeChangePass">RESET</button>
+        <button class="closeChangePass">RESET</button>
     </p>
 </div>
 
-<div class = "newPass" data-alertbox = "alert">
-    <div class = "header">
-        Alert Box <span class = "closeChangePass">x</span>
+<div class="newPass" data-alertbox="alert">
+    <div class="header">
+        Alert Box <span class="closeChangePass">x</span>
     </div>
     <p>
         Success.!
     </p>
+
     <p>
-        <button class = "closeChangePass">OK</button>
+        <button class="closeChangePass">OK</button>
     </p>
 </div>
-<div class = "screen"></div>
+
+<div class="screen"></div>
 <div class="driveWay">
     <div class="shade"></div>
     <img src="images/car.png" class="car">
@@ -1277,8 +1318,9 @@
 <!--Scripts-->
 <!--<script type="text/javascript" src = "//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
 <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
-<!--<script type="text/javascript" src = "//cdnjs.cloudflare.com/ajax/libs/tinyscrollbar/1.81/jquery.tinyscrollbar.min.js"></script>-->
-<script type="text/javascript" src="scripts/tinyscroller.js"></script>
+<script type="text/javascript" src = "//cdnjs.cloudflare.com/ajax/libs/tinyscrollbar/1.81/jquery.tinyscrollbar.min.js"></script>
+<!--<script type="text/javascript" src="scripts/tinyscroller.js"></script>-->
+<script type="text/javascript" src="scripts/jquery.raty.js"></script>
 <script type="text/javascript" src="scripts/script.js"></script>
 <script type="text/javascript">
     $(function () {

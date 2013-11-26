@@ -67,7 +67,9 @@ var fn = {
             $(this).addClass('current');
             $('.slideHolder').find('.slide').hide();
             $('.slideHolder').find('[data-slide_id="'+getDataType+'"]').fadeIn();
+            //Tiny Scroller
             $('.slideHolder').tinyscrollbar({ sizethumb: 100,invertscroll:false });
+
             if(getDataType == "ecoDrive"){
                 $('.ecoSettings').show();
             }
@@ -274,6 +276,17 @@ var fn = {
             });
         });
     },
+    rateBunks:function(){
+        $.fn.raty.defaults.path = 'http://localhost/intelFiles/scripts/img';
+        $('.starRating').raty({
+//            readOnly:true,
+            scoreName:  'entity.score',
+            number:5,
+            half: true,
+            score:3,
+            width:120
+        });
+    },
 
     execute:function(){
         fn.dropDown();
@@ -299,13 +312,12 @@ var fn = {
         fn.closePop();
 //        fn.settingsButton();
         fn.switch();
-
         fn.showPassChange();
         fn.hidePassChange('changePass');
-
         fn.addData();
-
         fn.submitInsirance();
+
+        fn.rateBunks();
     }
 }
 
