@@ -145,14 +145,17 @@ var fn = {
         $('.sttngCntrl').click(function(){
             var getSwitch = $(this).data("switch");
 
+            var switchCase = $(this).data("switchtype");
+            if(switchCase == "insurance"){
             //Show or hide Insurance thing
-            if($(this).data("switchcase") == "optin"){
-                $('.appSetting').find('[data-settingitem="insurance"]').slideDown();
+                if( $(this).data("switchcase") == "optin"){
+                    $('.appSetting').find('[data-settingitem="insurance"]').slideDown();
+                }
+                else{
+                    $('.appSetting').find('[data-settingitem="insurance"]').slideUp();
+                }
             }
-            else{
-                $('.appSetting').find('[data-settingitem="insurance"]').slideUp();
-            }
-
+            //Switching ON an OFF
             if(getSwitch == "ON"){
                 $(this).animate({
                     marginLeft: "-140px"
