@@ -126,24 +126,24 @@ var fn = {
 
     switch:function(){
         $('.switch').click(function(){
-            var getSwitch = $(this).data("switch");
+            var getSwitch = $(this).data("switched");
             if(getSwitch == "ON"){
                 $(this).animate({
                     marginLeft: "-80px"
                 });
-                $(this).data("switch","OFF")
+                $(this).data("switched","OFF")
             }
             else{
                 $(this).animate({
                     marginLeft: "0px"
                 });
-                $(this).data("switch","ON")
+                $(this).data("switched","ON")
             }
         });
 
         //Another Switch
         $('.sttngCntrl').click(function(){
-            var getSwitch = $(this).data("switch");
+            var getSwitch = $(this).data("switched");
 
             var switchCase = $(this).data("switchtype");
             if(switchCase == "insurance"){
@@ -160,17 +160,37 @@ var fn = {
                 $(this).animate({
                     marginLeft: "-140px"
                 });
-                $(this).data("switch","OFF")
+                $(this).data("switched","OFF")
                 $(this).data("switchcase","optout")
             }
             else{
                 $(this).animate({
                     marginLeft: "0px"
                 });
-                $(this).data("switch","ON")
+                $(this).data("switched","ON")
                 $(this).data("switchcase","optin")
             }
             fn.hidePassChange('alert');
+        });
+
+        $('.sttngCntrl').each(function(key, item){
+            var getSwitch = $(this).data("switched");
+//            alert(item);
+            //Switching ON an OFF
+            if(getSwitch == "ON"){
+                $(this).animate({
+                    marginLeft: "-140px"
+                });
+                $(this).data("switched","OFF")
+                $(this).data("switchcase","optout")
+            }
+            else{
+                $(this).animate({
+                    marginLeft: "0px"
+                });
+                $(this).data("switched","ON")
+                $(this).data("switchcase","optin")
+            }
         });
     },
 
