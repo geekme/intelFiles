@@ -1329,6 +1329,13 @@
     <img src="images/car.png" class="car">
 </div>
 
+<!--Large Map PopUP-->
+<div class = "mainLarge">
+    <div class = "closeLargeMap" style="">Close - X</div>
+    <div class = "large"></div>
+</div>
+<!--<div class = "screen"></div>-->
+
 </div>
 <div class="clear"></div>
 </div>
@@ -1345,6 +1352,95 @@
 <script type="text/javascript">
     $(function () {
         $('.slideHolder').tinyscrollbar({ sizethumb: 100, invertscroll: false });
+    });
+</script>
+<script>
+    function mapData(item, state) {
+//            var locationData=$(item).parent().find('.location-data').text();
+        var locationData;
+        switch(state){
+            case 'first':
+                locationData=$(item).data("coordinates");
+                break;
+            case 'pop':
+                locationData=$(item).parent().find('.largeMap').data("coordinates");
+                break;
+        }
+        var coordinatesNew = locationData.split("|");
+
+        var planCoordinates = new Array();
+        for (i = 0; i < coordinatesNew.length; i++) {
+            var point = new google.maps.LatLng(coordinatesNew[i].split(',')[0], coordinatesNew[i].split(',')[1]);
+
+            planCoordinates.push(point);
+            console.log(planCoordinates);
+        }
+        var myLatlngCen = planCoordinates[0];
+        var myLatlngStart = planCoordinates[0];
+        var myLatlngEnd = planCoordinates[planCoordinates.length - 1];
+//            alert(myLatlngEnd);
+
+        var mapOptions = {
+            zoom: 4,
+            center: myLatlngCen,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map($(item)[0], mapOptions);
+
+        var markerStart = new google.maps.Marker({
+            position: myLatlngStart,
+            map: map
+        });
+
+        var markerEnd = new google.maps.Marker({
+            position: myLatlngEnd,
+            map: map
+        });
+        var flightPath = new google.maps.Polyline({
+            path: planCoordinates,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 2});
+
+        flightPath.setMap(map);
+//            google.maps.event.addEventListener(map,'click',flightPath)
+    }
+
+    function initialize() {
+        $('.map-canvas1').each(function () {
+            var item = $(this);
+            mapData(item, "first");
+        });
+    }
+    function reinitialize() {
+        $('.large').each(function () {
+            var item = $(this);
+            mapData(item, "first");
+        });
+    }
+    function mapreinitialize(){
+        google.maps.event.addDomListener(window,'load',reinitialize);
+    }
+
+    //First Init
+    google.maps.event.addDomListener(window, 'load', initialize);
+    //        google.maps.event.addDomListener(window,'load',reinitialize);
+    //Click Init
+    $('.largeMap').live('click', function(e){
+        e.preventDefault();
+        $('.large').attr("data-coordinates",$(this).data("coordinates"));
+        reinitialize();
+        $('.screen').fadeIn();
+        $('.mainLarge').css("visibility","visible");
+        e.stopPropagation();
+        return false;
+    });
+    //Close Map
+    $('.closeLargeMap').live('click', function(){
+        $('.mainLarge').css("visibility","hidden");
+        $('.screen').fadeOut();
     });
 </script>
 </body>

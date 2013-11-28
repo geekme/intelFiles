@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="878e7f9b-f257-44f4-a72e-34b0bb18af89" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/map.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/map_README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feed1.html" afterPath="$PROJECT_DIR$/feed1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/script.js" afterPath="$PROJECT_DIR$/scripts/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="intelFiles.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385453551387" ignored="false" />
-    <file path="/feed1.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385540236957" ignored="false" />
-    <file path="/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385534169933" ignored="false" />
+    <file path="/feed1.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385618602956" ignored="false" />
+    <file path="/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385618568101" ignored="false" />
     <file path="$PROJECT_DIR$/../intel/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1383980099132" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385027553058" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VVA/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384945740562" ignored="false" />
@@ -17,7 +21,7 @@
     <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385012215152" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384943410592" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384935744693" ignored="false" />
-    <file path="/script.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385540379432" ignored="false" />
+    <file path="/script.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385553919667" ignored="false" />
     <file path="/regPage.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384169292830" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385126311444" ignored="false" />
     <file path="$PROJECT_DIR$/../ais/css/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384330398689" ignored="false" />
@@ -48,6 +52,8 @@
     <file path="$PROJECT_DIR$/../learnRest/application/controllers/sample.php" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385102461465" ignored="false" />
     <file path="/sample.php" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385102461465" ignored="false" />
     <file path="$PROJECT_DIR$/../learnRest/index.php" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385102148794" ignored="false" />
+    <file path="/map.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385618429735" ignored="false" />
+    <file path="/map_README.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385619202052" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +76,16 @@
       <file leaf-file-name="feed1.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feed1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="35" selection-start="3592" selection-end="3592" vertical-scroll-proportion="-1.0789474">
+            <state line="1332" column="0" selection-start="50446" selection-end="50568" vertical-scroll-proportion="-2.5789473">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map_README.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/map_README.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="90" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,19 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regPage.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/regPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="97" selection-start="1955" selection-end="1955" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="432" column="49" selection-start="10752" selection-end="10752" vertical-scroll-proportion="-13.48">
+            <state line="13" column="32" selection-start="332" selection-end="332" vertical-scroll-proportion="0.44023904">
               <folding />
             </state>
           </provider>
@@ -113,18 +119,29 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="39" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0">
+            <state line="21" column="39" selection-start="705" selection-end="705" vertical-scroll-proportion="0.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="51" selection-start="6396" selection-end="6396" vertical-scroll-proportion="0.6436059">
+            <state line="311" column="21" selection-start="11412" selection-end="11412" vertical-scroll-proportion="-105.74">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/map.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="264" column="46" selection-start="9586" selection-end="9586" vertical-scroll-proportion="-6.0392156">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#s:iterator#0;n#s:else#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,9 +186,11 @@
         <option value="$PROJECT_DIR$/styles/animate.css" />
         <option value="$PROJECT_DIR$/regPage.html" />
         <option value="$PROJECT_DIR$/scripts/jquery.raty.js" />
-        <option value="$PROJECT_DIR$/styles/style.css" />
-        <option value="$PROJECT_DIR$/feed1.html" />
         <option value="$PROJECT_DIR$/scripts/script.js" />
+        <option value="$PROJECT_DIR$/map.html" />
+        <option value="$PROJECT_DIR$/feed1.html" />
+        <option value="$PROJECT_DIR$/map_README.txt" />
+        <option value="$PROJECT_DIR$/styles/style.css" />
       </list>
     </option>
   </component>
@@ -297,7 +316,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28257576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -373,18 +392,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/checkmark.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/regPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="97" selection-start="1955" selection-end="1955" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="38" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
@@ -434,13 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="39" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="35" selection-start="5394" selection-end="5394" vertical-scroll-proportion="0.0">
@@ -462,26 +462,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.css">
+    <entry file="file://$PROJECT_DIR$/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="432" column="49" selection-start="10752" selection-end="10752" vertical-scroll-proportion="-13.48">
+        <state line="264" column="46" selection-start="9586" selection-end="9586" vertical-scroll-proportion="-6.0392156">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#s:iterator#0;n#s:else#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="39" selection-start="705" selection-end="705" vertical-scroll-proportion="0.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feed1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="35" selection-start="3592" selection-end="3592" vertical-scroll-proportion="-1.0789474">
+        <state line="1332" column="0" selection-start="50446" selection-end="50568" vertical-scroll-proportion="-2.5789473">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map_README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="90" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="51" selection-start="6396" selection-end="6396" vertical-scroll-proportion="0.6436059">
+        <state line="311" column="21" selection-start="11412" selection-end="11412" vertical-scroll-proportion="-105.74">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="32" selection-start="332" selection-end="332" vertical-scroll-proportion="0.44023904">
+          <folding />
         </state>
       </provider>
     </entry>

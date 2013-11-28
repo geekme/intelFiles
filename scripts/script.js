@@ -6,7 +6,8 @@
 var fn = {
     dropDown:function(){
         $(window).click(function(e){
-            if((e.target.className=="list" || e.target.className=="roleName" || e.target.className=="dropBtn") && parseInt($('.roles').height(), 10) < 1){
+//            alert(e.target.className);
+            if((e.target.className=="list" || e.target.className=="roleName" || e.target.className=="list fuelPump" || e.target.className=="dropBtn") && (parseInt($('.roles').height(), 10) < 1)){
                 $('.roles').css({
                     height:"auto"
                 });
@@ -300,7 +301,8 @@ var fn = {
         });
     },
     rateBunks:function(){
-        $.fn.raty.defaults.path = 'http://localhost/intelFiles/scripts/img';
+//        $.fn.raty.defaults.path = 'http://localhost/intelFiles/scripts/img';
+        $.fn.raty.defaults.path = 'http://fdrive.in/intel/scripts/img';
         $('.starRating').raty({
 //            readOnly:true,
             scoreName:  'entity.score',
@@ -308,6 +310,11 @@ var fn = {
             half: true,
             score:3,
             width:120
+        });
+    },
+    closeLargeMap:function(){
+        $('.closeLargeMap').live('click', function(){
+            $('.mainLarge').fadeOut();
         });
     },
 
