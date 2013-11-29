@@ -2,28 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="878e7f9b-f257-44f4-a72e-34b0bb18af89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/map_README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feed1.html" afterPath="$PROJECT_DIR$/feed1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/script.js" afterPath="$PROJECT_DIR$/scripts/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="intelFiles.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385453551387" ignored="false" />
-    <file path="/feed1.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385618602956" ignored="false" />
-    <file path="/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385618568101" ignored="false" />
+    <file path="/Dummy.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385702863843" ignored="false" />
+    <file path="/feed1.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385703594663" ignored="false" />
+    <file path="/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385632702082" ignored="false" />
     <file path="$PROJECT_DIR$/../intel/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1383980099132" ignored="false" />
-    <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385027553058" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385632702420" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VVA/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384945740562" ignored="false" />
-    <file path="/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385099281122" ignored="false" />
+    <file path="/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385638652289" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385012215152" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384943410592" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384935744693" ignored="false" />
     <file path="/script.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385553919667" ignored="false" />
     <file path="/regPage.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384169292830" ignored="false" />
-    <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385126311444" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385635201476" ignored="false" />
     <file path="$PROJECT_DIR$/../ais/css/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384330398689" ignored="false" />
     <file path="$PROJECT_DIR$/../ais/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384321588353" ignored="false" />
     <file path="/stylesheet.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384245521451" ignored="false" />
@@ -36,7 +32,7 @@
     <file path="$PROJECT_DIR$/../ais/myVideos.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384330295970" ignored="false" />
     <file path="/myVideos.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384330295970" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VVA/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385012202915" ignored="false" />
-    <file path="/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385124993079" ignored="false" />
+    <file path="/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385634553838" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_landingpage/assets/styles/media.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384943322075" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VVA/unsubAccount.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384946910361" ignored="false" />
     <file path="/unsubAccount.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384946864071" ignored="false" />
@@ -54,6 +50,18 @@
     <file path="$PROJECT_DIR$/../learnRest/index.php" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385102148794" ignored="false" />
     <file path="/map.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385618429735" ignored="false" />
     <file path="/map_README.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385619202052" ignored="false" />
+    <file path="$PROJECT_DIR$/../validate/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385638652635" ignored="false" />
+    <file path="$PROJECT_DIR$/../validateFunction/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385619722535" ignored="false" />
+    <file path="$PROJECT_DIR$/../Jquery-Flipster-Responsive/src/js/jquery.flipster.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385625939178" ignored="false" />
+    <file path="/jquery.flipster.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385625395238" ignored="false" />
+    <file path="$PROJECT_DIR$/../Jquery-Flipster-Responsive/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385625420876" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/landingPage.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385632797781" ignored="false" />
+    <file path="/landingPage.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385703319089" ignored="false" />
+    <file path="$PROJECT_DIR$/../validate/js/validate.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385640523536" ignored="false" />
+    <file path="/validate.js" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385639033904" ignored="false" />
+    <file path="$PROJECT_DIR$/../validate/README.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385641324928" ignored="false" />
+    <file path="/README.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385641289821" ignored="false" />
+    <file path="$PROJECT_DIR$/../vodafoneFeatured_VCTV/landingPage.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385703375588" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +81,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="feed1.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="feed1.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feed1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1332" column="0" selection-start="50446" selection-end="50568" vertical-scroll-proportion="-2.5789473">
+            <state line="268" column="30" selection-start="10297" selection-end="10297" vertical-scroll-proportion="1.5462185">
               <folding />
             </state>
           </provider>
@@ -107,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="32" selection-start="332" selection-end="332" vertical-scroll-proportion="0.44023904">
+            <state line="547" column="18" selection-start="14027" selection-end="14027" vertical-scroll-proportion="-17.56">
               <folding />
             </state>
           </provider>
@@ -131,6 +139,7 @@
             <state line="311" column="21" selection-start="11412" selection-end="11412" vertical-scroll-proportion="-105.74">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <marker date="1385553939345" expanded="true" signature="84:12375" placeholder="{&quot;status&quot;: &quot;on&quot;...}" />
               </folding>
             </state>
           </provider>
@@ -188,9 +197,9 @@
         <option value="$PROJECT_DIR$/scripts/jquery.raty.js" />
         <option value="$PROJECT_DIR$/scripts/script.js" />
         <option value="$PROJECT_DIR$/map.html" />
-        <option value="$PROJECT_DIR$/feed1.html" />
         <option value="$PROJECT_DIR$/map_README.txt" />
         <option value="$PROJECT_DIR$/styles/style.css" />
+        <option value="$PROJECT_DIR$/feed1.html" />
       </list>
     </option>
   </component>
@@ -404,6 +413,7 @@
         <state line="8" column="107" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1385553939345" expanded="true" signature="84:12375" placeholder="{&quot;status&quot;: &quot;on&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -478,13 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feed1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1332" column="0" selection-start="50446" selection-end="50568" vertical-scroll-proportion="-2.5789473">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/map_README.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="90" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
@@ -497,13 +500,21 @@
         <state line="311" column="21" selection-start="11412" selection-end="11412" vertical-scroll-proportion="-105.74">
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1385553939345" expanded="true" signature="84:12375" placeholder="{&quot;status&quot;: &quot;on&quot;...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="332" selection-end="332" vertical-scroll-proportion="0.44023904">
+        <state line="547" column="18" selection-start="14027" selection-end="14027" vertical-scroll-proportion="-17.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feed1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="268" column="30" selection-start="10297" selection-end="10297" vertical-scroll-proportion="1.5462185">
           <folding />
         </state>
       </provider>
