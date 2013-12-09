@@ -1643,3 +1643,164 @@ body#insurance{
     left: 0;
     display: none;
 }
+/*Eco Drive CSS*/
+#mainWrapper .content .contentArea .form .list.warning{
+    background: #59d97a;
+    color: #ffffff;
+}
+#mainWrapper .content .contentArea .form .list.warning.red{
+    background: #fb6343;
+    color: #ffffff;
+}
+#mainWrapper .content .contentArea .form .list.warning .sign{
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .content .contentArea .form .list.warning .sign img{
+    margin-top: 5px;
+}
+#mainWrapper .content .contentArea .form .list.warning .text{
+    width: 465px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align:left ;
+    color: #ffffff;
+    font-size: 22px;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails{
+    border-top: 1px solid #8a8a8a;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .actual, #mainWrapper .content .contentArea .form .list .mileageDetails .target{
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 1px solid #8a8a8a;
+    padding: 12px;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .actual .counter, #mainWrapper .content .contentArea .form .list .mileageDetails .target .counter{
+    width: 50px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 45px;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .counter.orange{
+    color: #eaaf13;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .counter.green{
+    color: #44cf68;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .counter p{
+    font-size: 20px;
+    margin-top: -12px;
+    text-align: right;
+    color: #5f5f5f;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .actual .title, #mainWrapper .content .contentArea .form .list .mileageDetails .target .title{
+    width: 83px;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: bottom;
+    color: #5f5f5f;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .mileagePoints{
+    width: 168px;
+    margin-left: -7px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .mileagePoints .points{
+
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .mileagePoints .points:first-of-type{
+    border-bottom: 1px solid #8a8a8a;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .mileagePoints .points .counter{
+    width: 30px;
+    font-size: 25px ;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .mileagePoints .points .counter.blue{
+    color: #1875b5;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .mileagePoints .points .counter.red{
+    color: #eb3b14;
+}
+#mainWrapper .content .contentArea .form .list .mileageDetails .mileagePoints .points .title{
+    width: 116px;
+    font-size: 17px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    overflow: hidden;
+    height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #5f5f5f;
+}
+
+         /*Mileage Graph CSS*/
+#mainWrapper .content .contentArea .form .list.mileageGraph{
+
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder{
+    position: relative;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .yValue{
+    display: inline-block;
+    width: 0;
+    font-size: 15px;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    position: absolute;
+    margin-left: -20px;
+    bottom:30px;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder{
+    display: inline-block;
+    width: 460px;
+    text-align:left ;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphItem{
+    width: 40px;
+    height: 180px;
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: 18px;
+    padding: 0px 14px;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .xvalue{
+    text-align:center ;
+    padding: 4px 0px;
+    font-size: 15px;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphValue{
+    text-align:center ;
+    font-size: 14px;
+    padding: 4px 0px;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphArea{
+    background: #656565;
+    height: 30px;
+    width: 40px;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphArea.one{
+    height: 50px;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphArea.two{
+    height: 70px;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphArea.three{
+    height: 30px;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .xValueTitle{
+    font-size: 17px;
+    padding-bottom: 10px;
+    }
