@@ -42,7 +42,7 @@
 </div>
 
 <div class="carDiscMain">
-    <div class="mainScoreHolder">
+    <div class="mainScoreHolder general">
         <div class="scroreHolder">
             <span>36</span>
             <span>Total <br> Driver Score</span>
@@ -60,6 +60,21 @@
             <span>Total Distabce <br> Travelled</span>
         </div>
     </div>
+    <!--Eco Drive Score holder-->
+    <div class="mainScoreHolder ecoDrive">
+        <div class="scroreHolder">
+            <span>32 <p>Ltrs</p></span>
+            <span>Fuel<br> Saved <br> November</span>
+        </div>
+        <div class="scroreHolder">
+            <span class="today">15 <p>Kms</p></span>
+            <span>Best<br> Fuel<br> Mileage</span>
+        </div>
+        <div class="scroreHolder">
+            <span class="today">07 <p>Kms</p></span>
+            <span>Worst<br> Fuel<br> Mileage</span>
+        </div>
+    </div>
 </div>
 
 <div class="content">
@@ -75,9 +90,9 @@
     <div class="tab" data-tab_id="ecoDrive">
         Eco Driving
     </div>
-    <div class="tab" data-tab_id="fuelMonitor">
-        Fuel Monitoring
-    </div>
+    <!--<div class="tab" data-tab_id="fuelMonitor">-->
+        <!--Fuel Monitoring-->
+    <!--</div>-->
     <div class="tab" data-tab_id="fuelPilferage">
         Fuel Pilferage
     </div>
@@ -541,6 +556,9 @@
                         16:40 - 23:12
                     </span>
                 </div>
+                <div class = "popupDate">
+                    12.11.2013
+                </div>
 
                 <div class="clear"></div>
             </div>
@@ -585,10 +603,6 @@
                         <div class = "counter blue"> 07 </div>
                         <div class = "title"> Incorrect Gear</div>
                     </div>
-                    <div class = "points">
-                        <div class = "counter red"> 04 </div>
-                        <div class = "title"> Engine Rev</div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -626,6 +640,16 @@
                 <div class="clear"></div>
             </div>
 
+            <div class = "toggleSwitch" data-status = "weekly">
+                <div class = "switchHolder">
+                    <div class = "switches">Monthly</div>
+                    <div class = "switches">Weekly</div>
+                </div>
+            </div>
+
+            <div class = "clear"></div>
+<div class = "mainGraphHolder">
+<div class = "mainGraphOverview">
             <div class = "mileageGraphHolder">
                 <div class = "yValue">
                     kms/ltr
@@ -635,36 +659,113 @@
                         <div class = "graphValue">16.8</div>
                         <div class = "graphArea one"></div>
                         <div class = "xvalue">08</div>
+                        <div class = "graphDetails">
+                            <p>
+                                05 - Hard Acceleration
+                            </p>
+                            <p>
+                                08 - Hard Braking
+                            </p>
+                            <p>
+                                07 - Incorrect Gear
+                            </p>
+                        </div>
                     </div>
                     <div class = "graphItem">
                         <div class = "graphValue">16.8</div>
                         <div class = "graphArea two"></div>
                         <div class = "xvalue">09</div>
+                        <div class = "graphDetails">
+                            <p>
+                                05 - Hard Acceleration
+                            </p>
+                            <p>
+                                08 - Hard Braking
+                            </p>
+                            <p>
+                                07 - Incorrect Gear
+                            </p>
+                        </div>
                     </div>
                     <div class = "graphItem">
                         <div class = "graphValue">16.8</div>
                         <div class = "graphArea one"></div>
                         <div class = "xvalue">10</div>
+                        <div class = "graphDetails">
+                            <p>
+                                05 - Hard Acceleration
+                            </p>
+                            <p>
+                                08 - Hard Braking
+                            </p>
+                            <p>
+                                07 - Incorrect Gear
+                            </p>
+                        </div>
                     </div>
                     <div class = "graphItem">
                         <div class = "graphValue">16.8</div>
                         <div class = "graphArea three"></div>
                         <div class = "xvalue">11</div>
+                        <div class = "graphDetails">
+                            <p>
+                                05 - Hard Acceleration
+                            </p>
+                            <p>
+                                08 - Hard Braking
+                            </p>
+                            <p>
+                                07 - Incorrect Gear
+                            </p>
+                        </div>
                     </div>
                     <div class = "graphItem">
                         <div class = "graphValue">16.8</div>
                         <div class = "graphArea two"></div>
                         <div class = "xvalue">12</div>
+                        <div class = "graphDetails">
+                            <p>
+                                05 - Hard Acceleration
+                            </p>
+                            <p>
+                                08 - Hard Braking
+                            </p>
+                            <p>
+                                07 - Incorrect Gear
+                            </p>
+                        </div>
                     </div>
                     <div class = "graphItem">
                         <div class = "graphValue">16.8</div>
                         <div class = "graphArea one"></div>
                         <div class = "xvalue">13</div>
+                        <div class = "graphDetails">
+                            <p>
+                                05 - Hard Acceleration
+                            </p>
+                            <p>
+                                08 - Hard Braking
+                            </p>
+                            <p>
+                                07 - Incorrect Gear
+                            </p>
+                        </div>
                     </div>
                     <div class = "graphItem">
                         <div class = "graphValue">16.8</div>
                         <div class = "graphArea three"></div>
                         <div class = "xvalue">14</div>
+                        <div class = "graphDetails">
+                            <p>
+                                05 - Hard Acceleration
+                            </p>
+                            <p>
+                                08 - Hard Braking
+                            </p>
+                            <p>
+                                07 - Incorrect Gear
+                            </p>
+                        </div>
                     </div>
                     <div class = "clear"></div>
                 </div>
@@ -672,6 +773,523 @@
                 <div class = "clear"></div>
                 <div class = "xValueTitle">Days</div>
             </div>
+
+            <!--Monthly mileage Graph-->
+            <div class = "mileageGraphHolder monthly">
+                <div class = "yValue">
+                    kms/ltr
+                </div>
+                <div class = "graphHolder monthly">
+
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea one"></div>
+                                <div class = "xvalue">08</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea two"></div>
+                                <div class = "xvalue">09</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea one"></div>
+                                <div class = "xvalue">10</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">11</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea two"></div>
+                                <div class = "xvalue">12</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea one"></div>
+                                <div class = "xvalue">13</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea two"></div>
+                                <div class = "xvalue">12</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea one"></div>
+                                <div class = "xvalue">13</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea two"></div>
+                                <div class = "xvalue">12</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea one"></div>
+                                <div class = "xvalue">13</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea two"></div>
+                                <div class = "xvalue">12</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea one"></div>
+                                <div class = "xvalue">13</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea two"></div>
+                                <div class = "xvalue">12</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea one"></div>
+                                <div class = "xvalue">13</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea two"></div>
+                                <div class = "xvalue">12</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea one"></div>
+                                <div class = "xvalue">13</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea two"></div>
+                                <div class = "xvalue">12</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea one"></div>
+                                <div class = "xvalue">13</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "graphItem">
+                                <div class = "graphValue">16.8</div>
+                                <div class = "graphArea three"></div>
+                                <div class = "xvalue">14</div>
+                                <div class = "graphDetails">
+                                    <p>
+                                        05 - Hard Acceleration
+                                    </p>
+                                    <p>
+                                        08 - Hard Braking
+                                    </p>
+                                    <p>
+                                        07 - Incorrect Gear
+                                    </p>
+                                </div>
+                            </div>
+                            <div class = "clear"></div>
+                </div>
+
+                <div class = "clear"></div>
+                <div class = "xValueTitle">Days</div>
+            </div>
+</div>
+</div>
             <div class = "clear"></div>
         </div>
 
@@ -965,12 +1583,12 @@
         <div class="header">
             Trip to madurai
             <div class="rightItem">
-                                                    <span>
-                                                        12.11.2013
-                                                    </span>
-                                                    <span>
-                                                        16:40 - 23:12
-                                                    </span>
+                <span>
+                    12.11.2013
+                </span>
+                <span>
+                    16:40 - 23:12
+                </span>
             </div>
 
             <div class="clear"></div>
@@ -1047,12 +1665,12 @@
         <div class="header">
             Trip to madurai
             <div class="rightItem">
-                                                    <span>
-                                                        12.11.2013
-                                                    </span>
-                                                    <span>
-                                                        16:40 - 23:12
-                                                    </span>
+                <span>
+                    12.11.2013
+                </span>
+                <span>
+                    16:40 - 23:12
+                </span>
             </div>
 
             <div class="clear"></div>
@@ -1086,12 +1704,12 @@
         <div class="header">
             Trip to madurai
             <div class="rightItem">
-                                                    <span>
-                                                        12.11.2013
-                                                    </span>
-                                                    <span>
-                                                        16:40 - 23:12
-                                                    </span>
+                <span>
+                    12.11.2013
+                </span>
+                <span>
+                    16:40 - 23:12
+                </span>
             </div>
 
             <div class="clear"></div>
@@ -1172,12 +1790,12 @@
         <div class="header">
             Trip to madurai
             <div class="rightItem">
-                                                    <span>
-                                                        12.11.2013
-                                                    </span>
-                                                    <span>
-                                                        16:40 - 23:12
-                                                    </span>
+                <span>
+                    12.11.2013
+                </span>
+                <span>
+                    16:40 - 23:12
+                </span>
             </div>
 
             <div class="clear"></div>
@@ -1365,6 +1983,7 @@
 <script type="text/javascript">
     $(function () {
         $('.slideHolder').tinyscrollbar({ sizethumb: 100, invertscroll: false });
+//        $('.monthly').tinyscrollbar({axis:'x'});
     });
 </script>
 <script>

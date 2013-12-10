@@ -71,12 +71,16 @@ var fn = {
             //Tiny Scroller
             $('.slideHolder').tinyscrollbar({ sizethumb: 100,invertscroll:false });
 
-            if(getDataType == "ecoDrive"){
-                $('.ecoSettings').show();
-            }
-            else{
-                $('.ecoSettings').hide();
-            }
+            //Toggleing Score Holder
+            switch(getDataType){
+                case 'ecoDrive':
+                    $('.mainScoreHolder').hide();
+                    $('.mainScoreHolder.ecoDrive').show();
+                    break;
+                default :
+                    $('.mainScoreHolder').hide();
+                    $('.mainScoreHolder.general').show();
+            };
         });
     },
     showTabHolder:function(){
@@ -318,6 +322,53 @@ var fn = {
         });
     },
 
+//    Graph Details
+    showDetails:function(){
+        $('.graphItem').hover(function(e){
+            $(this).find('.graphDetails')
+                .show()
+                .css({
+                    left: e.pageX+"px",
+                    top: e.pageY+"px"
+                });
+                console.log(e.clientX, e.clientY);
+        },
+        function(){
+            $(this).find('.graphDetails').hide();
+        });
+        $('.graphItem').mousemove(function(e){
+            $(this).find('.graphDetails')
+                .css({
+                    left: e.pageX-500+"px",
+                    top: e.pageY-500+"px"
+                });
+            console.log(e.clientX, e.clientY);
+        });
+    },
+    toggleGraph:function(){
+        $('.toggleSwitch').click(function(){
+            var getStatus = $(this).data("status");
+            if(getStatus == "weekly"){
+                $('.toggleSwitch').find('.switchHolder').animate({
+                    marginLeft:'-75px'
+                });
+                $('.mainGraphOverview').animate({
+                    marginLeft:'-542px'
+                });
+                $('.toggleSwitch').data("status","monthly");
+            }
+            else{
+                $('.toggleSwitch').find('.switchHolder').animate({
+                    marginLeft:'0px'
+                });
+                $('.mainGraphOverview').animate({
+                    marginLeft:'0px'
+                });
+                $('.toggleSwitch').data("status","weekly")
+            }
+        });
+    },
+
     execute:function(){
         fn.dropDown();
         fn.selectItem();
@@ -348,6 +399,10 @@ var fn = {
         fn.submitInsirance();
 
         fn.rateBunks();
+
+        //Graph Details
+//        fn.showDetails();
+        fn.toggleGraph();
     }
 }
 

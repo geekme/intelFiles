@@ -516,6 +516,16 @@ body#insurance{
 #mainWrapper .content .contentArea .form .list.center .header .rightItem{
     float: right;
 }
+#mainWrapper .content .contentArea .form .list.center .header .popupDate{
+    position: absolute;
+    padding: 5px;
+    background: #ffffff;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+    color: #6b6b6b;
+    margin-left: 100%;
+    margin-top: -20px;
+    display: none;
+}
 #mainWrapper .content .contentArea .form .list.center .header .rightItem span{
     border:none;
     display: inline;
@@ -1234,11 +1244,19 @@ body#insurance{
     position: relative;
     z-index: 100;
     color: #6F6F6F;
+    height: 80px;
 }
 #mainWrapper .carDiscMain .mainScoreHolder{
     width: 1080px;
     margin: 10px auto;
     text-align: center;
+    display: none;
+}
+#mainWrapper .carDiscMain .mainScoreHolder.ecoDrive{
+    width: 1080px;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
 }
 #mainWrapper .carDiscMain .scroreHolder{
     display: inline-block;
@@ -1252,6 +1270,15 @@ body#insurance{
 }
 #mainWrapper .carDiscMain .scroreHolder span.today{
     color:#44b91a;
+}
+#mainWrapper .carDiscMain .scroreHolder span p{
+    margin: 0px;
+    margin-top: -12px;
+    text-align:right ;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    color:#6F6F6F ;
 }
 #mainWrapper .carDiscMain .scroreHolder span:nth-of-type(2){
     font-size: 15px;
@@ -1352,6 +1379,13 @@ body#insurance{
     width: 77%;
 }
 
+.graphHolder .viewport {
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+}
+
 .slideHolderMain .overview {
     list-style: none;
     position: absolute;
@@ -1366,8 +1400,20 @@ body#insurance{
     position: relative;
     width: 22%;
 }
+.graphHolder .scrollbar {
+    position: relative;
+    width: 10px;
+}
 .slideHolderMain .track {
     background: url("../images/trackLine_03.png") repeat-y scroll center 0 #AAAAAA;
+    border-left: 5px solid #4F4F4F;
+    height: 100%;
+    padding: 0 1px;
+    position: relative;
+    width: 100%;
+}
+.graphHolder .track {
+    background: #ffffff;
     border-left: 5px solid #4F4F4F;
     height: 100%;
     padding: 0 1px;
@@ -1384,6 +1430,15 @@ body#insurance{
     position: absolute;
     top: 0;
     width: 40%;
+}
+.graphHolder .thumb {
+    background: #000000;
+    cursor: pointer;
+    height: 10px;
+    margin-left: 30%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
 }
 .slideHolderMain .thumb .end { overflow: hidden; height: 5px; width: 13px; }
 .slideHolderMain .disable{ display: none; }
@@ -1675,17 +1730,18 @@ body#insurance{
     border-right: 1px solid #8a8a8a;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .actual, #mainWrapper .content .contentArea .form .list .mileageDetails .target{
-    width: 150px;
+    width: 135px;
     display: inline-block;
     vertical-align: middle;
-    padding: 18px 12px;
+    padding: 5px 12px;
+    margin-top: -5px;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .actual .counter, #mainWrapper .content .contentArea .form .list .mileageDetails .target .counter{
-    width: 50px;
+    width: 46px;
     text-align: left;
     display: inline-block;
     vertical-align: bottom;
-    font-size: 45px;
+    font-size: 40px;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .counter.orange{
     color: #eaaf13;
@@ -1700,7 +1756,7 @@ body#insurance{
     color: #5f5f5f;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .actual .title, #mainWrapper .content .contentArea .form .list .mileageDetails .target .title{
-    width: 83px;
+    width: 72px;
     margin-left: 10px;
     font-size: 20px;
     text-align: left;
@@ -1723,12 +1779,12 @@ body#insurance{
     font-size: 18px;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .actualTarget{
-    width: 358px;
+    width: 340px;
     border-right: 1px solid #8a8a8a;
     display: inline-block;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .mileagePoints{
-    width: 168px;
+    width: 186px;
     margin-left: -7px;
     display: inline-block;
     vertical-align: top;
@@ -1756,11 +1812,11 @@ body#insurance{
     color: #eb3b14;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .mileagePoints .points .title{
-    width: 116px;
-    font-size: 17px;
+    width: 142px;
+    font-size: 15px;
     display: inline-block;
     text-align: left;
-    vertical-align: middle;
+    vertical-align: bottom;
     overflow: hidden;
     height: 24px;
     text-overflow: ellipsis;
@@ -1772,7 +1828,20 @@ body#insurance{
 #mainWrapper .content .contentArea .form .list.mileageGraph{
 
 }
+#mainWrapper .content .contentArea .form .list.mileageGraph .mainGraphHolder{
+    width: 526px;
+    overflow: hidden;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mainGraphHolder .mainGraphOverview{
+    width: 1100px;
+}
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder{
+    width: 541px;
+    position: relative;
+    float: left;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder.monthly{
+    display: block;
     position: relative;
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .yValue{
@@ -1792,6 +1861,12 @@ body#insurance{
     width: 460px;
     text-align:left ;
 }
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder.monthly .graphHolder{
+    display: inline-block;
+    width: 470px;
+    text-align:left ;
+    overflow-x: scroll;
+}
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphItem{
     width: 40px;
     height: 180px;
@@ -1799,6 +1874,14 @@ body#insurance{
     vertical-align: bottom;
     font-size: 18px;
     padding: 0px 14px;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder.monthly .graphHolder .graphItem{
+    width: 40px;
+    height: 180px;
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: 18px;
+    padding: 0px 4px;
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .xvalue{
     text-align:center ;
@@ -1814,6 +1897,14 @@ body#insurance{
     background: #656565;
     height: 30px;
     width: 40px;
+    cursor:pointer;
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder.monthly .graphHolder .graphArea{
+    background: #656565;
+    height: 30px;
+    width: 15px;
+    cursor:pointer;
+    margin: 0 auto;
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphArea.one{
     height: 50px;
@@ -1827,4 +1918,37 @@ body#insurance{
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .xValueTitle{
     font-size: 17px;
     padding-bottom: 10px;
-    }
+}
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphDetails{
+    position: absolute;
+    padding: 10px 7px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    color: #656565;
+    font-size:13px;
+    display: none;
+}
+
+/*Toggle Switch*/
+.toggleSwitch{
+    width: 75px;
+    overflow: hidden;
+    float: right;
+    margin-right: 19px;
+    height: 30px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+.toggleSwitch .switchHolder{
+    width: 152px;
+    overflow: hidden;
+}
+.toggleSwitch .switches{
+    text-align: center;
+    width: 75px;
+    padding: 5px 0px;
+    cursor: pointer;
+    background: #3498db;
+    color: #ffffff;
+    font-size: 15px;
+    float: left;
+}
