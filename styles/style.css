@@ -1246,17 +1246,17 @@ body#insurance{
     color: #6F6F6F;
     height: 80px;
 }
-#mainWrapper .carDiscMain .mainScoreHolder{
+#mainWrapper .carDiscMain .mainScoreHolder.general{
     width: 1080px;
     margin: 10px auto;
     text-align: center;
-    display: none;
+    display: block;
 }
 #mainWrapper .carDiscMain .mainScoreHolder.ecoDrive{
     width: 1080px;
     margin: 10px auto;
     text-align: center;
-    display: block;
+    display: none;
 }
 #mainWrapper .carDiscMain .scroreHolder{
     display: inline-block;
@@ -1919,7 +1919,8 @@ body#insurance{
     font-size: 17px;
     padding-bottom: 10px;
 }
-#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphDetails{
+/*Graph Details*/
+.graphDetails{
     position: absolute;
     padding: 10px 7px;
     background: #ffffff;

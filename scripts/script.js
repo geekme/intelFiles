@@ -324,25 +324,23 @@ var fn = {
 
 //    Graph Details
     showDetails:function(){
-        $('.graphItem').hover(function(e){
-            $(this).find('.graphDetails')
+        $('.graphArea').hover(function(e){
+            $('.graphDetails')
                 .show()
                 .css({
                     left: e.pageX+"px",
-                    top: e.pageY+"px"
+                    top: e.pageY-120+"px"
                 });
-                console.log(e.clientX, e.clientY);
         },
         function(){
-            $(this).find('.graphDetails').hide();
+            $('.graphDetails').hide();
         });
-        $('.graphItem').mousemove(function(e){
-            $(this).find('.graphDetails')
+        $('.graphArea').mousemove(function(e){
+            $('.graphDetails')
                 .css({
-                    left: e.pageX-500+"px",
-                    top: e.pageY-500+"px"
+                    left: e.pageX+"px",
+                    top: e.pageY-120+"px"
                 });
-            console.log(e.clientX, e.clientY);
         });
     },
     toggleGraph:function(){
@@ -401,7 +399,7 @@ var fn = {
         fn.rateBunks();
 
         //Graph Details
-//        fn.showDetails();
+        fn.showDetails();
         fn.toggleGraph();
     }
 }
