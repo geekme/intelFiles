@@ -1932,8 +1932,6 @@ body#insurance{
 
 /*Toggle Switch*/
 .toggleSwitch{
-    width: 75px;
-    overflow: hidden;
     float: right;
     margin-right: 19px;
     height: 30px;
@@ -1948,8 +1946,17 @@ body#insurance{
     width: 75px;
     padding: 5px 0px;
     cursor: pointer;
-    background: #3498db;
+    /*background: #3498db;*/
     color: #ffffff;
     font-size: 15px;
     float: left;
+}
+.toggleSwitch .switches.monthly{
+    color: #3498db;
+}
+.toggleSwitch .bgColor{
+    width: 75px;
+    background: #3498db;
+    color: #fff;
+    height:30px;
 }

@@ -347,8 +347,14 @@ var fn = {
         $('.toggleSwitch').click(function(){
             var getStatus = $(this).data("status");
             if(getStatus == "weekly"){
-                $('.toggleSwitch').find('.switchHolder').animate({
-                    marginLeft:'-75px'
+                $('.toggleSwitch').find('.switches.weekly').css({
+                    color:'#3498db'
+                });
+                $('.toggleSwitch').find('.switches.monthly').css({
+                    color:'#ffffff'
+                });
+                $('.toggleSwitch').find('.bgColor').animate({
+                    marginLeft:"77px"
                 });
                 $('.mainGraphOverview').animate({
                     marginLeft:'-542px'
@@ -356,8 +362,14 @@ var fn = {
                 $('.toggleSwitch').data("status","monthly");
             }
             else{
-                $('.toggleSwitch').find('.switchHolder').animate({
-                    marginLeft:'0px'
+                $('.toggleSwitch').find('.switches.monthly').css({
+                    color:'#3498db'
+                });
+                $('.toggleSwitch').find('.switches.weekly').css({
+                    color:'#ffffff'
+                });
+                $('.toggleSwitch').find('.bgColor').animate({
+                    marginLeft:"0px"
                 });
                 $('.mainGraphOverview').animate({
                     marginLeft:'0px'
