@@ -378,6 +378,64 @@ var fn = {
             }
         });
     },
+    ecoDriveTabs:function(){
+        //Weekly change
+        $('.weeklyTabs').find('.ecoTab').click(function(){
+            var tab = $(this).data("ecotab");
+
+            switch(tab){
+                case 'hardBreaking':
+                    $('.weeklyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.weekly').animate({
+                        marginTop:'-190px'
+                    }, 'slow','easeOutBack');
+                    break;
+                case 'hardAccel':
+                    $('.weeklyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.weekly').animate({
+                        marginTop:'0px'
+                    },'slow','easeOutBack');
+                    break;
+                case 'incorGear':
+                    $('.weeklyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.weekly').animate({
+                        marginTop:'-380px'
+                    },'slow','easeOutBack');
+                    break;
+            }
+        });
+        //Monthly
+        $('.monthlyTabs').find('.ecoTab').click(function(){
+            var tab = $(this).data("ecotab");
+
+            switch(tab){
+                case 'hardBreaking':
+                    $('.monthlyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.monthly').animate({
+                        marginTop:'-210px'
+                    }, 'slow','easeOutBack');
+                    break;
+                case 'hardAccel':
+                    $('.monthlyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.monthly').animate({
+                        marginTop:'0px'
+                    },'slow','easeOutBack');
+                    break;
+                case 'incorGear':
+                    $('.monthlyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.monthly').animate({
+                        marginTop:'-420px'
+                    },'slow','easeOutBack');
+                    break;
+            }
+        });
+    },
 
     execute:function(){
         fn.dropDown();
@@ -413,6 +471,9 @@ var fn = {
         //Graph Details
         fn.showDetails();
         fn.toggleGraph();
+
+        //Graph Tabs
+        fn.ecoDriveTabs();
     }
 }
 
