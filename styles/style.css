@@ -780,7 +780,7 @@ body#insurance{
     width: 100%;
     /*display: block;*/
 }
-#mainWrapper .content .contentArea .slideHolder .slide:nth-of-type(6){
+#mainWrapper .content .contentArea .slideHolder .slide:nth-of-type(3){
     display: block;
 }
 #mainWrapper .content .contentArea .slideHolder .slide .form{
@@ -1737,7 +1737,7 @@ body#insurance{
     margin-top: -5px;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .actual .counter, #mainWrapper .content .contentArea .form .list .mileageDetails .target .counter{
-    width: 46px;
+    width: 44px;
     text-align: left;
     display: inline-block;
     vertical-align: bottom;
@@ -1837,25 +1837,28 @@ body#insurance{
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder{
     width: 541px;
-    height: 220px;
+    height: 290px;
     position: relative;
     float: left;
 }
+#mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphViewPort{
+    width: 100%;
+    margin-top: 50px;
+}
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphOverview{
-    width: 320px;
-    display: inline-block;
+    width: 100%;
+    display: block;
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .weeklyTabs{
-    width: 160px;
-    height: inherit;
-    border: 1px solid ;
-    float: left;
+    width: 100%;
     font-size: 14px;
     text-align: left;
     background: #858585;
+    position: absolute;
+    z-index: 1;
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .weeklyTabs .ecoTab{
-    padding: 10px 12px;
+    padding: 10px 5px;
     background: #858585;
     color: #ffffff;
     border-bottom: 1px solid #707070;
@@ -1865,6 +1868,12 @@ body#insurance{
     -o-transition: all .5s;
     transition: all .5s;
     cursor: pointer;
+    text-align: center;
+    width: 16.9%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .weeklyTabs .ecoTab:hover{
     background: #787878;
@@ -1875,16 +1884,15 @@ body#insurance{
 
 /*Monthy Tabs*/
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .monthlyTabs{
-    width: 160px;
-    height: inherit;
-    border: 1px solid ;
-    float: left;
+    width: 100%;
     font-size: 14px;
     text-align: left;
     background: #858585;
+    position: absolute;
+    z-index: 1;
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .monthlyTabs .ecoTab{
-    padding: 10px 12px;
+    padding: 10px 5px;
     background: #858585;
     color: #ffffff;
     border-bottom: 1px solid #707070;
@@ -1894,6 +1902,12 @@ body#insurance{
     -o-transition: all .5s;
     transition: all .5s;
     cursor: pointer;
+    text-align: center;
+    width: 16.9%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .monthlyTabs .ecoTab:hover{
     background: #787878;
@@ -1920,17 +1934,19 @@ body#insurance{
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder{
     display: inline-block;
-    width: 320px;
+    width: 100%;
     text-align:left ;
+    font-size: 13px;
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder.first{
     /*display: inline-block;*/
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder.monthly .graphHolder{
     display: inline-block;
-    width: 320px;
+    /*width: 320px;*/
+    width: 100%;
     text-align:left ;
-    overflow-x: scroll;
+    /*overflow-x: scroll;*/
 }
 #mainWrapper .content .contentArea .form .list.mileageGraph .mileageGraphHolder .graphHolder .graphItem{
     width: 40px;
@@ -2028,4 +2044,24 @@ body#insurance{
     background: #3498db;
     color: #fff;
     height:30px;
+}
+
+/*Weekly Graph*/
+.weeklyGraph{
+    width: 500px;
+    height: 200px;
+    font-size: 13px;
+    margin-left:14px;
+    margin-bottom: 30px;
+}
+.weeklyGraph{
+    width: 500px;
+    height: 200px;
+    font-size: 13px;
+    margin-left:14px;
+}
+.monthlyGraph{
+    width: 500px;
+    height: 230px;
+    margin-left: 14px;
 }

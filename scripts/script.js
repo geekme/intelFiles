@@ -388,7 +388,7 @@ var fn = {
                     $('.weeklyTabs').find('.ecoTab').removeClass("hover");
                     $(this).addClass("hover");
                     $('.graphOverview.weekly').animate({
-                        marginTop:'-190px'
+                        marginTop:'-240px'
                     }, 'slow','easeOutBack');
                     break;
                 case 'hardAccel':
@@ -402,7 +402,21 @@ var fn = {
                     $('.weeklyTabs').find('.ecoTab').removeClass("hover");
                     $(this).addClass("hover");
                     $('.graphOverview.weekly').animate({
-                        marginTop:'-380px'
+                        marginTop:'-480px'
+                    },'slow','easeOutBack');
+                    break;
+                case 'idleTime':
+                    $('.weeklyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.weekly').animate({
+                        marginTop:'-710px'
+                    },'slow','easeOutBack');
+                    break;
+                case 'fuelMile':
+                    $('.weeklyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.weekly').animate({
+                        marginTop:'-950px'
                     },'slow','easeOutBack');
                     break;
             }
@@ -416,7 +430,7 @@ var fn = {
                     $('.monthlyTabs').find('.ecoTab').removeClass("hover");
                     $(this).addClass("hover");
                     $('.graphOverview.monthly').animate({
-                        marginTop:'-210px'
+                        marginTop:'-240px'
                     }, 'slow','easeOutBack');
                     break;
                 case 'hardAccel':
@@ -430,13 +444,94 @@ var fn = {
                     $('.monthlyTabs').find('.ecoTab').removeClass("hover");
                     $(this).addClass("hover");
                     $('.graphOverview.monthly').animate({
-                        marginTop:'-420px'
+                        marginTop:'-480px'
+                    },'slow','easeOutBack');
+                    break;
+                case 'idleTime':
+                    $('.monthlyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.monthly').animate({
+                        marginTop:'-710px'
+                    },'slow','easeOutBack');
+                    break;
+                case 'fuelMile':
+                    $('.monthlyTabs').find('.ecoTab').removeClass("hover");
+                    $(this).addClass("hover");
+                    $('.graphOverview.monthly').animate({
+                        marginTop:'-950px'
                     },'slow','easeOutBack');
                     break;
             }
         });
     },
 
+    weeklyGraph:function(){
+        var s3 = [2, 6, 7, 10, 4,3,8];
+        var ticks = ['Su', 'Mo', 'Tu', 'We','Th','F','Sa'];
+        $('.weeklyGraph').jqplot([s3], {
+            // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
+            animate: !$.jqplot.use_excanvas,
+            seriesDefaults:{
+                renderer:$.jqplot.BarRenderer,
+                pointLabels: { show: true }
+            },
+            grid: {
+                background: 'rgba(57,57,57,0.0)',
+                drawBorder: false,
+                shadow: false,
+                gridLineColor: '#eaeaea',
+                gridLineWidth: 1
+            },
+            axes: {
+                xaxis: {
+                    renderer: $.jqplot.CategoryAxisRenderer,
+                    ticks: ticks
+                }
+            },
+            highlighter: { show: false }
+        });
+    },
+    monthlyGraph:function(){
+        var s1 = [3,5,7,4,8,3,9,3,2,7,9,3,5,6,7,8,2,8,2,4,0,9,3,5,6,7,8,2,4,0];
+        var ticksx = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30'];
+        var ticksy = ['0','1','2','3','4','5','6','7','8','9','10'];
+        var s2 = [[2002, 10200], [2003, 10800], [2004, 11200], [2005, 11800], [2006, 12400],
+            [2007, 12800], [2008, 13200], [2009, 12600], [2010, 13100]];
+        $('.monthlyGraph').jqplot([s1], {
+            animate: true,
+            seriesDefaults: {
+                rendererOptions: {
+                    smooth: true,
+                    animation: {
+                        show: true
+                    }
+                },
+                showMarker: false
+            },
+            seriesStyles: {
+                color: "red",
+                lineWidth: 3,
+                markerOptions: {
+                    show: false
+                }
+            },
+            axes: {
+                xaxis: {
+                    ticks: ticksx
+                },
+                yaxis: {
+                    ticks: ticksy
+                }
+            },
+            grid: {
+                background: 'rgba(57,57,57,0.0)',
+                drawBorder: false,
+                shadow: false,
+                gridLineColor: '#eaeaea',
+                gridLineWidth: 1
+            }
+        });
+    },
     execute:function(){
         fn.dropDown();
         fn.selectItem();
@@ -474,6 +569,10 @@ var fn = {
 
         //Graph Tabs
         fn.ecoDriveTabs();
+        //Weekly Graph
+        fn.weeklyGraph();
+        //Monthly Graph
+        fn.monthlyGraph();
     }
 }
 

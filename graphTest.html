@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/jquery.jqplot.min.css" />
+
+    <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/jqplot.barRenderer.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/jqplot.highlighter.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/jqplot.cursor.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/jqplot.pointLabels.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            //Spark Line
+            var s11 = [[1, 112000], [2, 122000], [3, 104000], [4, 99000], [5, 121000],
+                [6, 148000], [7, 114000], [8, 133000], [9, 161000], [10, 173000],
+                    [11, 112000], [12, 122000], [13, 104000], [14, 99000], [15, 121000],
+                    [16, 148000], [17, 114000], [18, 133000], [19, 161000], [20, 173000],
+                        [21, 112000], [22, 122000], [23, 104000], [24, 99000], [25, 121000],
+                [26, 148000], [27, 114000], [28, 133000], [29, 161000], [30, 173000], [31, 173000]];
+            var s1 = [3,5,7,4,8,3,9,3,2,7,9,3,5,6,7,8,2,8,2,4,0,9,3,5,6,7,8,2,4,0];
+            var ticksx = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30'];
+            var ticksy = ['0','1','2','3','4','5','6','7','8','9','10'];
+            var s2 = [[2002, 10200], [2003, 10800], [2004, 11200], [2005, 11800], [2006, 12400],
+                [2007, 12800], [2008, 13200], [2009, 12600], [2010, 13100]];
+            $.jqplot('chart1', [s1], {
+                animate: true,
+                seriesDefaults: {
+                    rendererOptions: {
+                        smooth: true,
+                        animation: {
+                            show: true
+                        }
+                    },
+                    showMarker: false
+                },
+                seriesStyles: {
+                    color: "red",
+                    lineWidth: 8,
+                    markerOptions: {
+                        show: false
+                    }
+                },
+                axes: {
+                    xaxis: {
+                        ticks: ticksx
+                    },
+                    yaxis: {
+                        ticks: ticksy
+                    }
+                },
+                grid: {
+                    background: 'rgba(57,57,57,0.0)',
+                    drawBorder: false,
+                    shadow: false,
+                    gridLineColor: '#eaeaea',
+                    gridLineWidth: 1
+                }
+            });
+            var s3 = [2, 6, 7, 10, 4,3,8];
+            var ticks = ['Su', 'Mo', 'Tu', 'We','Th','F','Sa'];
+
+            plot1 = $.jqplot('chart2', [s3], {
+                // Only animate if we're not using excanvas (not in IE 7 or IE 8)..
+                animate: !$.jqplot.use_excanvas,
+                seriesDefaults:{
+                    renderer:$.jqplot.BarRenderer,
+                    pointLabels: { show: true }
+                },
+                grid: {
+                    background: 'rgba(57,57,57,0.0)',
+                    drawBorder: false,
+                    shadow: false,
+                    gridLineColor: '#eaeaea',
+                    gridLineWidth: 1
+                },
+                axes: {
+                    xaxis: {
+                        renderer: $.jqplot.CategoryAxisRenderer,
+                        ticks: ticks
+                    }
+                },
+                highlighter: { show: false }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div id = "chart1" style="width: 500px; height: 300px; border: 1px solid;"></div>
+    <div id = "chart2" style="width: 500px; height: 300px; border: 1px solid;"></div>
+</body>
+</html>
