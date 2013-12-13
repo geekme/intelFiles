@@ -1271,6 +1271,9 @@ body#insurance{
 #mainWrapper .carDiscMain .scroreHolder span.today{
     color:#44b91a;
 }
+#mainWrapper .carDiscMain .scroreHolder span.bad{
+    color:#ff0000;
+}
 #mainWrapper .carDiscMain .scroreHolder span p{
     margin: 0px;
     margin-top: -12px;
@@ -1769,7 +1772,7 @@ body#insurance{
     border-top: 1px solid #8a8a8a;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .idleTiming b{
-    color: #1875b5;
+    color: #ff0000;
     font-size: 30px;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails .idleTiming b span{

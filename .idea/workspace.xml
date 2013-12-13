@@ -2,79 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="878e7f9b-f257-44f4-a72e-34b0bb18af89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.BezierCurveRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.BezierCurveRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.barRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.barRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.blockRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.blockRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.bubbleRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.bubbleRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.canvasAxisLabelRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.canvasAxisLabelRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.canvasAxisTickRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.canvasAxisTickRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.canvasOverlay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.canvasOverlay.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.canvasTextRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.canvasTextRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.categoryAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.categoryAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.ciParser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.ciParser.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.cursor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.cursor.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.dateAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.dateAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.donutRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.donutRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.dragable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.dragable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.enhancedLegendRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.enhancedLegendRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.funnelRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.funnelRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.highlighter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.highlighter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.json2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.json2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.logAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.logAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.mekkoAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.mekkoAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.mekkoRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.mekkoRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.meterGaugeRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.meterGaugeRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.mobile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.mobile.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.ohlcRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.ohlcRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pieRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pieRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pointLabels.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pointLabels.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pyramidAxisRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pyramidAxisRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pyramidGridRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pyramidGridRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pyramidRenderer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.pyramidRenderer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.trendline.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/plugins/jqplot.trendline.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/jquery.jqplot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/jquery.jqplot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/jquery.jqplot.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feed1.html" afterPath="$PROJECT_DIR$/feed1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/script.js" afterPath="$PROJECT_DIR$/scripts/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="intelFiles.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1386825617313" ignored="false" />
-    <file path="/feed1.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1386930989064" ignored="false" />
-    <file path="/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1386931182716" ignored="false" />
+    <file path="/feed1.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1386931742282" ignored="false" />
+    <file path="/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1386931779903" ignored="false" />
     <file path="$PROJECT_DIR$/../intel/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1383980099132" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VCTV/assets/styles/style.css" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1385632702420" ignored="false" />
     <file path="$PROJECT_DIR$/../vodafone_smart_VVA/index.html" changelist="878e7f9b-f257-44f4-a72e-34b0bb18af89" time="1384945740562" ignored="false" />
@@ -159,7 +94,7 @@
       <file leaf-file-name="feed1.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feed1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="669" column="36" selection-start="25348" selection-end="25348" vertical-scroll-proportion="-5.0784316">
+            <state line="74" column="28" selection-start="2427" selection-end="2427" vertical-scroll-proportion="-2.9019608">
               <folding>
                 <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -171,9 +106,7 @@
                 <element signature="tag#div#0;tag#div#4;tag#div#0;tag#div#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#1;tag#div#4;tag#div#0;tag#div#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#5;tag#div#0;tag#div#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#3;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#4;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#5;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#6;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#7;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
               </folding>
@@ -181,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1902" column="24" selection-start="49471" selection-end="49471" vertical-scroll-proportion="-14.44">
+            <state line="1774" column="18" selection-start="45531" selection-end="45531" vertical-scroll-proportion="0.46271512">
               <folding />
             </state>
           </provider>
@@ -202,10 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="459" column="56" selection-start="17191" selection-end="17191" vertical-scroll-proportion="0.6587591">
+            <state line="462" column="26" selection-start="17307" selection-end="17307" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -271,9 +204,9 @@
         <option value="$PROJECT_DIR$/map.html" />
         <option value="$PROJECT_DIR$/map_README.txt" />
         <option value="$PROJECT_DIR$/graphTest.html" />
+        <option value="$PROJECT_DIR$/scripts/script.js" />
         <option value="$PROJECT_DIR$/feed1.html" />
         <option value="$PROJECT_DIR$/styles/style.css" />
-        <option value="$PROJECT_DIR$/scripts/script.js" />
       </list>
     </option>
   </component>
@@ -564,9 +497,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="462" column="26" selection-start="17307" selection-end="17307" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/feed1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="669" column="36" selection-start="25348" selection-end="25348" vertical-scroll-proportion="-5.0784316">
+        <state line="74" column="28" selection-start="2427" selection-end="2427" vertical-scroll-proportion="-2.9019608">
           <folding>
             <element signature="tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -578,9 +518,7 @@
             <element signature="tag#div#0;tag#div#4;tag#div#0;tag#div#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#div#4;tag#div#0;tag#div#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#5;tag#div#0;tag#div#2;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#3;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#4;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#5;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#6;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#7;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#1;tag#div#0;tag#div#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
@@ -589,14 +527,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1902" column="24" selection-start="49471" selection-end="49471" vertical-scroll-proportion="-14.44">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="459" column="56" selection-start="17191" selection-end="17191" vertical-scroll-proportion="0.6587591">
+        <state line="1774" column="18" selection-start="45531" selection-end="45531" vertical-scroll-proportion="0.46271512">
           <folding />
         </state>
       </provider>
