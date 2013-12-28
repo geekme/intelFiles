@@ -1710,6 +1710,10 @@ body#insurance{
     background: #fb6343;
     color: #ffffff;
 }
+#mainWrapper .content .contentArea .form .list.warning.orange{
+    background: #fba90b;
+    color: #ffffff;
+}
 #mainWrapper .content .contentArea .form .list.warning .sign{
     width: 45px;
     display: inline-block;
@@ -1725,6 +1729,12 @@ body#insurance{
     text-align:left ;
     color: #ffffff;
     font-size: 22px;
+}
+
+#mainWrapper .content .contentArea .form .list .accLocation{
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 10px;
 }
 #mainWrapper .content .contentArea .form .list .mileageDetails{
     border-top: 1px solid #8a8a8a;
