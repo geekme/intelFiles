@@ -664,6 +664,34 @@ var fn = {
             }
         });
     },
+    currentTab:function(){
+        var url = window.location.pathname;
+        var value = url.split("/");
+        value = value[value.length-1];
+        alert(value);
+        switch (value){
+            case 'home':
+                $('.tabHolder').find('tab').removeClass("current");
+                $('.tabHolder').find('[data-tab_id="feed"]').addClass("current");
+                break;
+            case 'PhydServiceAction':
+                $('.tabHolder').find('tab').removeClass("current");
+                $('.tabHolder').find('[data-tab_id="payDrive"]').addClass("current");
+                break;
+            case 'ecoDrivingAction':
+                $('.tabHolder').find('tab').removeClass("current");
+                $('.tabHolder').find('[data-tab_id="ecoDrive"]').addClass("current");
+                break;
+            case 'FuelMonitoringAction':
+                $('.tabHolder').find('tab').removeClass("current");
+                $('.tabHolder').find('[data-tab_id="fuelPilferage"]').addClass("current");
+                break;
+            case 'SettingsAction':
+                $('.tabHolder').find('tab').removeClass("current");
+                $('.tabHolder').find('[data-tab_id="setting"]').addClass("current");
+                break;
+        }
+    },
     execute:function(){
         fn.dropDown();
         fn.selectItem();
@@ -705,6 +733,8 @@ var fn = {
         fn.weeklyGraph();
         //Monthly Graph
         fn.monthlyGraph();
+
+        fn.currentTab();
     }
 }
 
