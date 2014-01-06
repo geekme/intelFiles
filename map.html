@@ -5,9 +5,9 @@
     <title></title>
 
     <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
-    <script
-            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
-    </script>
+        <script
+                src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+        </script>
     <style type="text/css">
         .mainLarge{
             width: 700px;
@@ -56,6 +56,9 @@
         }
     </style>
     <script>
+        var planCoordinates = new Array();
+        var count = 0;
+        var myLatlngCen, map;
         function mapData(item, state) {
 //            var locationData=$(item).parent().find('.location-data').text();
             var locationData;
@@ -69,17 +72,17 @@
             }
             var coordinatesNew = locationData.split("|");
 
-            var planCoordinates = new Array();
+//            var planCoordinates = new Array();
             for (i = 0; i < coordinatesNew.length; i++) {
                 var point = new google.maps.LatLng(coordinatesNew[i].split(',')[0], coordinatesNew[i].split(',')[1]);
 
                 planCoordinates.push(point);
                 console.log(planCoordinates);
             }
-            var myLatlngCen = planCoordinates[0];
+             myLatlngCen = planCoordinates[0];
             var myLatlngStart = planCoordinates[0];
             var myLatlngEnd = planCoordinates[planCoordinates.length - 1];
-//            alert(myLatlngEnd);
+//            alert(myLatlngCen);
 
             var mapOptions = {
                 zoom: 4,
@@ -87,7 +90,7 @@
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
-            var map = new google.maps.Map($(item)[0], mapOptions);
+            map = new google.maps.Map($(item)[0], mapOptions);
 
             var markerStart = new google.maps.Marker({
                 position: myLatlngStart,
@@ -103,16 +106,47 @@
                 geodesic: true,
                 strokeColor: '#FF0000',
                 strokeOpacity: 1.0,
-                strokeWeight: 2});
+                strokeWeight: 2
+            });
 
-            flightPath.setMap(map);
+//            flightPath.setMap(map);
 //            google.maps.event.addEventListener(map,'click',flightPath)
+            // Listen Click Event to draw Polygon
+//            google.maps.event.addListener(map, 'click', function(event) {
+//                planCoordinates[count] = event.latLng;
+////                createPolyline(planCoordinates);
+//                alert(event.latLng);
+//                count++;
+//            });
+        }
+        function createPolyline(polyC){
+            Path = new google.maps.Polygon({
+                path: polyC,
+                strokeColor: 'red',
+                strokeOpacity: 0.5,
+                strokeWeight: 2,
+                fillColor:'lightblue',
+                fillOpacity:0.4
+            });
+            Path.setMap(map);
+        }
+        function connectPoints()
+        {
+            var point_add = []; // initialize an array
+            var start = planCoordinates[0]; // storing start point
+            var end = planCoordinates[(planCoordinates.length-1)]; // storing end point
+            // pushing start and end point to an array
+            point_add.push(start);
+            point_add.push(end);
+            createPolyline(point_add); // function to join points
+
         }
 
         function initialize() {
             $('.map-canvas1').each(function () {
                 var item = $(this);
                 mapData(item, "first");
+                createPolyline(planCoordinates);
             });
         }
         function reinitialize() {
@@ -259,7 +293,7 @@
                                                 <!--77.678798789,21.8789798809|32.45454545,75.2343243434-->
                                             <!--</p>-->
 
-                                            <div class="map-canvas1" data-coordinates = "77.678798789,21.8789798809|32.45454545,75.2343243434" id="map-canvas"
+                                            <div class="map-canvas1" data-coordinates = "17.811456088564483, 21.4453125|9.275622176792098, 21.4453125|-0.7031073524364783, 36.03515625|20.3034175184893, 55.37109375|17.811456088564483, 21.4453125" id="map-canvas"
                                                  style="width:inherit;height:250px;"></div>
                                             <a href="#" class="largeMap" id="largeMap" data-coordinates = "77.678798789,21.8789798809|32.45454545,75.2343243434">View large map</a>
                                         </div>

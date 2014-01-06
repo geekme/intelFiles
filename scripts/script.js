@@ -2,6 +2,103 @@
 //Author Munsif Mulla
 //Date : 23/10/2013
 
+var planCoordinates = [];
+var count = 0;
+var myLatlngCen, map;
+function mapData(item, state) {
+    var locationData;
+    switch(state){
+        case 'first':
+            locationData=$(item).data("coordinates");
+            break;
+        case 'pop':
+            locationData=$(item).parent().find('.largeMap').data("coordinates");
+            break;
+    }
+    var coordinatesNew = locationData.split("|");
+
+    for (i = 0; i < coordinatesNew.length; i++) {
+        var point = new google.maps.LatLng(coordinatesNew[i].split(',')[0], coordinatesNew[i].split(',')[1]);
+
+        planCoordinates.push(point);
+        console.log(planCoordinates);
+    }
+    myLatlngCen = planCoordinates[0];
+    var myLatlngStart = planCoordinates[0];
+    var myLatlngEnd = planCoordinates[planCoordinates.length - 1];
+
+    var mapOptions = {
+        zoom: 1,
+        center: myLatlngCen,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    map = new google.maps.Map($(item)[0], mapOptions);
+
+    var markerStart = new google.maps.Marker({
+        position: myLatlngStart,
+        map: map
+    });
+
+    var markerEnd = new google.maps.Marker({
+        position: myLatlngEnd,
+        map: map
+    });
+    var flightPath = new google.maps.Polyline({
+        path: planCoordinates,
+        geodesic: true,
+        strokeColor: '#FF0000',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+    });
+
+//            flightPath.setMap(map);
+//            google.maps.event.addEventListener(map,'click',flightPath)
+    // Listen Click Event to draw Polygon
+//            google.maps.event.addListener(map, 'click', function(event) {
+//                planCoordinates[count] = event.latLng;
+////                createPolyline(planCoordinates);
+//                alert(event.latLng);
+//                count++;
+//            });
+}
+function createPolyline(polyC){
+    Path = new google.maps.Polygon({
+        path: polyC,
+        strokeColor: 'red',
+        strokeOpacity: 0.5,
+        strokeWeight: 2,
+        fillColor:'lightblue',
+        fillOpacity:0.4
+    });
+    Path.setMap(map);
+}
+function connectPoints()
+{
+    var point_add = []; // initialize an array
+    var start = planCoordinates[0]; // storing start point
+    var end = planCoordinates[(planCoordinates.length-1)]; // storing end point
+    // pushing start and end point to an array
+    point_add.push(start);
+    point_add.push(end);
+    createPolyline(point_add); // function to join points
+
+}
+function initialize() {
+    $('.geoFencer').each(function () {
+        var item = $(this);
+        mapData(item, "first");
+        createPolyline(planCoordinates);
+    });
+}
+function reinitialize() {
+    $('.large').each(function () {
+        var item = $(this);
+        mapData(item, "first");
+    });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
 var fn = {
     dropDown:function(){
@@ -77,6 +174,9 @@ var fn = {
                     $('.mainScoreHolder').hide();
                     $('.mainScoreHolder.ecoDrive').show();
                     break;
+                case 'geoFence':
+//                    google.maps.event.addDomListener(window, 'load', initialize);
+                    break;
                 default :
                     $('.mainScoreHolder').hide();
                     $('.mainScoreHolder.general').show();
@@ -130,7 +230,43 @@ var fn = {
     },
 
     switch:function(){
-        $('.switch').click(function(){
+        //Pre change
+        $('.sttngCntrl').each(function(key, item){
+            var getSwitch = $(this).data("switched");
+            var switchCase = $(this).data("switchtype");
+//            alert(item);
+            //Switching ON an OFF
+            switch(switchCase){
+                case 'insurance':
+                    if ($(item).data("switchcase") == "optout") {
+                        $(this).animate({
+                            marginLeft: "-140px"
+                        });
+                        $(this).data("switched","OFF")
+                        $('.appSetting').find('[data-settingitem="insurance"]').slideDown();
+                        $(item).data("switchcase","optin")
+                    }
+                    break;
+                default:
+                    if(getSwitch == "ON"){
+                        $(this).animate({
+                            marginLeft: "-140px"
+                        });
+                        $(this).data("switched","OFF")
+                        $(this).data("switchcase","optout");
+                    }
+                    else{
+                        $(this).animate({
+                            marginLeft: "0px"
+                        });
+                        $(this).data("switched","ON")
+                        $(this).data("switchcase","optin")
+                    }
+            }
+
+        });
+        // Click change
+        $('.switch').live('click',function(){
             var getSwitch = $(this).data("switched");
             if(getSwitch == "ON"){
                 $(this).animate({
@@ -147,56 +283,52 @@ var fn = {
         });
 
         //Another Switch
-        $('.sttngCntrl').click(function(){
+        $('.sttngCntrl').live('click',function(){
             var getSwitch = $(this).data("switched");
-
             var switchCase = $(this).data("switchtype");
-            if(switchCase == "insurance"){
-            //Show or hide Insurance thing
-                if( $(this).data("switchcase") == "optin"){
-                    $('.appSetting').find('[data-settingitem="insurance"]').slideDown();
-                }
-                else{
-                    $('.appSetting').find('[data-settingitem="insurance"]').slideUp();
-                }
+
+            switch(switchCase) {
+                case "insurance":
+                    if (getSwitch == "ON") {
+                        $(this).animate({
+                            marginLeft: "-140px"
+                        });
+                        $(this).data("switched", "OFF")
+                        $(this).data("switchcase", "optout");
+                        $('.appSetting').find('[data-settingitem="insurance"]').slideDown();
+                    }
+                    else {
+                        $(this).animate({
+                            marginLeft: "0px"
+                        });
+                        $(this).data("switched", "ON")
+                        $(this).data("switchcase", "optin");
+                        $('.appSetting').find('[data-settingitem="insurance"]').slideUp();
+                    }
+                    fn.hidePassChange('alert');
+
+                    break;
+                default:
+                    //Switching ON an OFF
+                    if(getSwitch == "ON"){
+                        $(this).animate({
+                            marginLeft: "-140px"
+                        });
+                        $(this).data("switched","OFF")
+                        $(this).data("switchcase","optout")
+                    }
+                    else{
+                        $(this).animate({
+                            marginLeft: "0px"
+                        });
+                        $(this).data("switched","ON")
+                        $(this).data("switchcase","optin")
+                    }
+                    fn.hidePassChange('alert');
             }
-            //Switching ON an OFF
-            if(getSwitch == "ON"){
-                $(this).animate({
-                    marginLeft: "-140px"
-                });
-                $(this).data("switched","OFF")
-                $(this).data("switchcase","optout")
-            }
-            else{
-                $(this).animate({
-                    marginLeft: "0px"
-                });
-                $(this).data("switched","ON")
-                $(this).data("switchcase","optin")
-            }
-            fn.hidePassChange('alert');
+
         });
 
-        $('.sttngCntrl').each(function(key, item){
-            var getSwitch = $(this).data("switched");
-//            alert(item);
-            //Switching ON an OFF
-            if(getSwitch == "ON"){
-                $(this).animate({
-                    marginLeft: "-140px"
-                });
-                $(this).data("switched","OFF")
-                $(this).data("switchcase","optout")
-            }
-            else{
-                $(this).animate({
-                    marginLeft: "0px"
-                });
-                $(this).data("switched","ON")
-                $(this).data("switchcase","optin")
-            }
-        });
     },
 
     submitInsirance:function(){

@@ -536,6 +536,10 @@ body#insurance{
 #mainWrapper .content .contentArea .form .list.center .mapHolder{
     height: 200px;
 }
+#mainWrapper .content .contentArea .form .list.center .mapHolder span{
+    font-size: 0px;
+    display: none;
+}
 #mainWrapper .content .contentArea .form .list.center .distancePoints{
     padding: 10px;
     background: #f2f2f2;
@@ -780,6 +784,11 @@ body#insurance{
     width: 100%;
     /*display: block;*/
 }
+#mainWrapper .content .contentArea .slideHolder .slide.geoFence {
+    /*position: absolute;*/
+    /*width: 100%;*/
+    display: block;
+}
 #mainWrapper .content .contentArea .slideHolder .slide:nth-of-type(3){
     display: block;
 }
@@ -884,7 +893,7 @@ body#insurance{
     /*display: none;*/
 }
 #mainWrapper .content .contentArea .insuranceTabHolder .slide:nth-of-type(6){
-    display: block;
+    /*display: block;*/
 }
 #mainWrapper .content .contentArea .insuranceTabHolder .slide .form{
     margin-top: 0px;
