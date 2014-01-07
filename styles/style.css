@@ -389,34 +389,38 @@ body#insurance{
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
+    border-bottom: 2px solid rgb(138, 138, 138);
+    width: 100%;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .dummyer {
-    border-bottom: 2px solid #8A8A8A;
-    /*display: inline-block;*/
-    margin: 12px 5px;
+    margin: 12px -5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder {
-    /*position: absolute;*/
-    bottom: 0;
-    /*width: 88px;*/
+    bottom: 0px;
+    min-height: 125px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
     width: 100%;
-    padding-bottom: 10px;
-    text-align: left;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .points {
-    /*border: 1px solid;*/
     display: inline-block;
-    font-size: 17px;
+    font-size: 15px;
     height: auto;
-    vertical-align: middle;
-    width: 65px;
+    vertical-align: top;
+    width: 100%;
+    text-align: center;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph {
     display: inline-block;
-    height: 10px;
     vertical-align: middle;
-    width: 340px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .statGraph.blue{
     background: #259dc0;
@@ -503,15 +507,17 @@ body#insurance{
     box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
 }
 #mainWrapper .content .contentArea .form .list.center .driveStats .statHolder .instance {
-    /*border: 1px solid;*/
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
     overflow: hidden;
-    text-align: left;
+    text-align: center;
     text-overflow: ellipsis;
-    vertical-align: middle;
+    vertical-align: bottom;
     white-space: nowrap;
-    width: 90px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
 }
 #mainWrapper .content .contentArea .form .list.center .header .rightItem{
     float: right;

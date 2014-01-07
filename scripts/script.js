@@ -456,7 +456,7 @@ var fn = {
 
 //    Graph Details
     showDetails:function(){
-        $('.graphArea').hover(function(e){
+        $('.statGraph').hover(function(e){
             $('.graphDetails')
                 .show()
                 .css({
@@ -467,7 +467,7 @@ var fn = {
         function(){
             $('.graphDetails').hide();
         });
-        $('.graphArea').mousemove(function(e){
+        $('.statGraph').mousemove(function(e){
             $('.graphDetails')
                 .css({
                     left: e.pageX+"px",
@@ -668,7 +668,7 @@ var fn = {
         var url = window.location.pathname;
         var value = url.split("/");
         value = value[value.length-1];
-        alert(value);
+//        alert(value);
         switch (value){
             case 'home':
                 $('.tabHolder').find('tab').removeClass("current");
@@ -691,6 +691,37 @@ var fn = {
                 $('.tabHolder').find('[data-tab_id="setting"]').addClass("current");
                 break;
         }
+    },
+    drawGraph:function(){
+        var graphItem = $('.driveStats').find('.statGraph');
+
+        function inRange(start, end, value) {
+            if (value <= end && value >= start)
+                return value;
+        }
+        graphItem.each(function(key, item){
+            var graphData = $(item).data("graph_value");
+            $(item).animate({
+                height:graphData*10,
+                width:graphData*10
+            },'easeOutBounce');
+            $(item).prev().html(graphData+"/10")
+
+            switch(graphData){
+                case inRange(0,3, graphData):
+                    $(item).css("background","#d83030");
+                    break;
+                case inRange(3,6,graphData ):
+                    $(item).css("background","#e08827");
+                    break;
+                case inRange(6,8, graphData):
+                    $(item).css("background","#58bc40");
+                    break;
+                case inRange(8,11, graphData):
+                    $(item).css("background","#259dc0");
+                    break;
+            }
+        });
     },
     execute:function(){
         fn.dropDown();
@@ -735,6 +766,8 @@ var fn = {
         fn.monthlyGraph();
 
         fn.currentTab();
+
+        fn.drawGraph();
     }
 }
 
