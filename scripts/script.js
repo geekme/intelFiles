@@ -263,7 +263,6 @@ var fn = {
                         $(this).data("switchcase","optin")
                     }
             }
-
         });
         // Click change
         $('.switch').live('click',function(){
